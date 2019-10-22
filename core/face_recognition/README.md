@@ -12,3 +12,8 @@ pip install opencv-python
 + **sklearn:** scikit-learn简称sklearn，支持包括分类，回归，降维和聚类四大机器学习算法。还包括了特征提取，数据处理和模型评估者三大模块。<br>
     pip install sklearn
 ---
+### 2.核心代码：
++ **get_my_faces.py:**
++ **set_other_people.py:**
++ **tran_faces.py:**
++ **is_my_face.py:**
