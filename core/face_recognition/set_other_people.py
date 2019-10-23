@@ -14,8 +14,10 @@ import os
 import cv2
 import dlib
 
-input_dir = './input_img'
-output_dir = './other_faces'        # 使用dlib来批量识别图片中的人脸部分，并保存到指定目录下
+import docs.conf as conf
+
+input_dir = conf.facedataset_dir + 'input_img'
+output_dir = conf.facedataset_dir + 'other_faces'  # 使用dlib来批量识别图片中的人脸部分，并保存到指定目录下
 size = 64
 
 if not os.path.exists(output_dir):

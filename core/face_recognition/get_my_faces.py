@@ -13,10 +13,11 @@ import cv2          #cv2表示使用的是C++API
 import dlib
 import os
 import random
+import docs.conf as conf        # 项目配置文件
 
-output_dir = './my_faces'
+output_dir = conf.facedataset_dir + 'my_faces'
 size = 64
-selfphotoNum = 100          #自己的照片数
+selfphotoNum = 300          #自己的照片数
 
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)

@@ -18,8 +18,10 @@ import random
 import sys
 from sklearn.model_selection import train_test_split
 
-my_faces_path = './my_faces'
-other_faces_path = './other_faces'
+import docs.conf as conf
+
+my_faces_path = conf.facedataset_dir + 'my_faces'
+other_faces_path = conf.facedataset_dir + 'other_faces'
 size = 64
 
 imgs = []
