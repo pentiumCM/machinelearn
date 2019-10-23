@@ -15,7 +15,7 @@ import os
 import random
 import docs.conf as conf        # 项目配置文件
 
-output_dir = conf.facedataset_dir + 'my_faces'
+output_dir = conf.facedataset_dir + 'my_faces_ys'
 size = 64
 selfphotoNum = 300          #自己的照片数
 

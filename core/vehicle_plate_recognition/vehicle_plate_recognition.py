@@ -6,11 +6,13 @@
 @Software: PyCharm
 @File    : vehicle_plate_recognition.py
 @Time    : 2019/10/23 0:25
-@desc	 : 
+@desc	 : 基于opencv的车牌识别
 '''
 
 import cv2
 import numpy as np
+
+import docs.conf as conf
 
 
 # 形态学处理
@@ -74,6 +76,6 @@ def detect(img):
 
 if __name__ == '__main__':
     # 输入的参数为图片的路径
-    img = cv2.imread('F:/develop_code/python/dataset/vehicle_plate_recognition/test2.jpg')
+    img = cv2.imread(conf.vehicle_recognition_dataset_dir + 'car3.jpg')
     detect(img)
     detect(img)
