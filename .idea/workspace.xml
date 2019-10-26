@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f554bef-8bce-4cd7-ade2-c630cb5655a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core/neural_network/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/neural_network/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/core/neural_network/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +20,8 @@
         <entry file="file://$PROJECT_DIR$/core/neural_network/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="684">
-                <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+              <first_editor relative-caret-position="212">
+                <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
               </first_editor>
               <second_editor />
             </state>
@@ -57,9 +57,11 @@
       <find>x_image</find>
       <find>W_fc2</find>
       <find>W_fc1</find>
+      <find>###</find>
     </findStrings>
     <replaceStrings>
       <replace>/</replace>
+      <replace>###</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -116,18 +118,6 @@
               <item name="machinelearn" type="b2602c69:ProjectViewProjectNode" />
               <item name="machinelearn" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="machinelearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="machinelearn" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="face_recognition" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="machinelearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="machinelearn" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="handwriting_recognition" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="machinelearn" type="b2602c69:ProjectViewProjectNode" />
@@ -321,7 +311,8 @@
       <workItem from="1571792629614" duration="861000" />
       <workItem from="1571793806279" duration="7173000" />
       <workItem from="1571801151982" duration="10479000" />
-      <workItem from="1571973275601" duration="5561000" />
+      <workItem from="1571973275601" duration="6023000" />
+      <workItem from="1572077260125" duration="293000" />
     </task>
     <task id="LOCAL-00001" summary="修改README文件说明">
       <created>1571715964495</created>
@@ -351,11 +342,18 @@
       <option name="project" value="LOCAL" />
       <updated>1571814047143</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="添加神经网络的笔记">
+      <created>1572020199205</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1572020199205</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50914000" />
+    <option name="totallyTimeSpent" value="51669000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -370,7 +368,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.17927383" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.23600605" />
       <window_info id="Structure" order="1" weight="0.18835099" />
       <window_info id="Favorites" order="2" weight="0.22541603" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -442,7 +440,8 @@
     <MESSAGE value="修改README文件说明" />
     <MESSAGE value="添加项目的全局配置文件" />
     <MESSAGE value="添加手写体代码注释" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加手写体代码注释" />
+    <MESSAGE value="添加神经网络的笔记" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加神经网络的笔记" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/machinelearn$train_faces.coverage" NAME="train_faces Coverage Results" MODIFIED="1571800011295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/face_recognition" />
@@ -629,8 +628,8 @@
     <entry file="file://$PROJECT_DIR$/core/neural_network/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="684">
-            <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+          <first_editor relative-caret-position="212">
+            <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
           </first_editor>
           <second_editor />
         </state>
