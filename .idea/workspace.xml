@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f554bef-8bce-4cd7-ade2-c630cb5655a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/core/neural_network/network.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/neural_network/neural_network.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/handwriting_recognition/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/core/handwriting_recognition/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/neural_network/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/core/neural_network/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,14 +19,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/neural_network/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="212">
-                <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+            <state split_layout="SECOND">
+              <first_editor relative-caret-position="270">
+                <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/neural_network/neural_network.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1404">
+              <caret line="78" column="26" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/neural_network/network.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+              <folding>
+                <element signature="e#177#195#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,6 +82,10 @@
       <find>W_fc2</find>
       <find>W_fc1</find>
       <find>###</find>
+      <find>sigmoid</find>
+      <find>sigmoid_prime</find>
+      <find>sigmoid_derivative</find>
+      <find>forward_propagate</find>
     </findStrings>
     <replaceStrings>
       <replace>/</replace>
@@ -76,7 +104,6 @@
         <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/core/main.py" />
         <option value="$PROJECT_DIR$/core/face_recognition/get_my_face_opencv.py" />
-        <option value="$PROJECT_DIR$/core/face_recognition/README.md" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/core/vehicle_plate_recognition/plateNeuralNet.py" />
         <option value="$PROJECT_DIR$/core/setting.py" />
@@ -87,18 +114,22 @@
         <option value="$PROJECT_DIR$/core/handwriting_recognition/cnn.py" />
         <option value="$PROJECT_DIR$/docs/conf.py" />
         <option value="$PROJECT_DIR$/core/vehicle_plate_recognition/README.md" />
-        <option value="$PROJECT_DIR$/core/handwriting_recognition/README.md" />
         <option value="$PROJECT_DIR$/core/face_recognition/get_my_faces.py" />
         <option value="$PROJECT_DIR$/core/handwriting_recognition/handwriting_recognition.py" />
         <option value="$PROJECT_DIR$/core/vehicle_plate_recognition/vehicle_plate_recognition.py" />
+        <option value="$PROJECT_DIR$/core/face_recognition/README.md" />
+        <option value="$PROJECT_DIR$/core/handwriting_recognition/README.md" />
         <option value="$PROJECT_DIR$/core/neural_network/README.md" />
+        <option value="$PROJECT_DIR$/core/neural_network/neural_network.py" />
+        <option value="$PROJECT_DIR$/core/neural_network/network.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="647" />
-    <option name="width" value="1386" />
-    <option name="height" value="735" />
+    <option name="x" value="582" />
+    <option name="y" value="6" />
+    <option name="width" value="1164" />
+    <option name="height" value="737" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -168,7 +199,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.handwriting_recognition">
+  <component name="RunManager" selected="Python.network">
     <configuration name="handwriting_recognition" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="machinelearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -213,7 +244,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="set_other_people" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="network" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="machinelearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -221,12 +252,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core/face_recognition" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core/neural_network" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core/face_recognition/set_other_people.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core/neural_network/network.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -235,7 +266,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="train_faces" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="neural_network" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="machinelearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -243,12 +274,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core/face_recognition" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core/neural_network" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core/face_recognition/train_faces.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core/neural_network/neural_network.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -281,11 +312,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.network" />
+        <item itemvalue="Python.neural_network" />
         <item itemvalue="Python.handwriting_recognition" />
         <item itemvalue="Python.vehicle_plate_recognition" />
         <item itemvalue="Python.is_my_face" />
-        <item itemvalue="Python.train_faces" />
-        <item itemvalue="Python.set_other_people" />
       </list>
     </recent_temporary>
   </component>
@@ -312,7 +343,8 @@
       <workItem from="1571793806279" duration="7173000" />
       <workItem from="1571801151982" duration="10479000" />
       <workItem from="1571973275601" duration="6023000" />
-      <workItem from="1572077260125" duration="293000" />
+      <workItem from="1572077260125" duration="22132000" />
+      <workItem from="1572236183194" duration="778000" />
     </task>
     <task id="LOCAL-00001" summary="修改README文件说明">
       <created>1571715964495</created>
@@ -349,11 +381,18 @@
       <option name="project" value="LOCAL" />
       <updated>1572020199205</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="修改神经网络的笔记">
+      <created>1572077679674</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1572077679674</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51669000" />
+    <option name="totallyTimeSpent" value="74286000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -366,14 +405,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.23600605" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23600605" />
       <window_info id="Structure" order="1" weight="0.18835099" />
       <window_info id="Favorites" order="2" weight="0.22541603" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32935154" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.62286687" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39761093" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -383,11 +421,11 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3289689" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32764506" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.32980332" />
       <window_info anchor="right" id="R Graphics" order="4" />
       <window_info anchor="right" id="R Packages" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -441,15 +479,18 @@
     <MESSAGE value="添加项目的全局配置文件" />
     <MESSAGE value="添加手写体代码注释" />
     <MESSAGE value="添加神经网络的笔记" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加神经网络的笔记" />
+    <MESSAGE value="修改神经网络的笔记" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改神经网络的笔记" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/machinelearn$train_faces.coverage" NAME="train_faces Coverage Results" MODIFIED="1571800011295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/face_recognition" />
     <SUITE FILE_PATH="coverage/machinelearn$handwriting_recognition.coverage" NAME="handwriting_recognition Coverage Results" MODIFIED="1571813743132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/handwriting_recognition" />
     <SUITE FILE_PATH="coverage/machinelearn$is_my_face.coverage" NAME="is_my_face Coverage Results" MODIFIED="1571813679020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/face_recognition" />
     <SUITE FILE_PATH="coverage/machinelearn$set_other_people.coverage" NAME="set_other_people Coverage Results" MODIFIED="1571799430086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/face_recognition" />
+    <SUITE FILE_PATH="coverage/machinelearn$network.coverage" NAME="network Coverage Results" MODIFIED="1572184458809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/neural_network" />
     <SUITE FILE_PATH="coverage/machinelearn$carPlateIdentity.coverage" NAME="carPlateIdentity Coverage Results" MODIFIED="1571796703285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/vehicle_plate_recognition" />
     <SUITE FILE_PATH="coverage/machinelearn$vehicle_plate_recognition.coverage" NAME="vehicle_plate_recognition Coverage Results" MODIFIED="1571813720619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/vehicle_plate_recognition" />
+    <SUITE FILE_PATH="coverage/machinelearn$neural_network.coverage" NAME="neural_network Coverage Results" MODIFIED="1572183684531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/neural_network" />
     <SUITE FILE_PATH="coverage/machinelearn$get_my_faces.coverage" NAME="get_my_faces Coverage Results" MODIFIED="1571798413881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/face_recognition" />
     <SUITE FILE_PATH="coverage/machinelearn$get_my_face_opencv.coverage" NAME="get_my_face_opencv Coverage Results" MODIFIED="1571662665723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/face_recognition" />
     <SUITE FILE_PATH="coverage/machinelearn$plateNeuralNet.coverage" NAME="plateNeuralNet Coverage Results" MODIFIED="1571797126771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/vehicle_plate_recognition" />
@@ -513,16 +554,6 @@
           <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
           <folding>
             <element signature="e#214#237#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/face_recognition/set_other_people.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#195#205#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -605,33 +636,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/handwriting_recognition/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="108">
-            <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/core/face_recognition/set_other_people.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#195#205#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/face_recognition/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="234">
-            <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="162">
+            <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/neural_network/README.md">
+    <entry file="file://$PROJECT_DIR$/core/handwriting_recognition/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="212">
-            <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+          <first_editor relative-caret-position="18">
+            <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="4" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="2837" column="4" selection-start-line="2837" selection-start-column="4" selection-end-line="2837" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/neural_network/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="270">
+            <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/neural_network/neural_network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1404">
+          <caret line="78" column="26" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/neural_network/network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+          <folding>
+            <element signature="e#177#195#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
