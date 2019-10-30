@@ -1,7 +1,8 @@
 # 神经网络体系搭建
 ## 一、基础知识：
 ### 1.什么是人工神经网络:
-    人工神经元又称为感知机，输入经过加权和偏置后，由激活函数处理后决定输出。
+    人工神经元又称为感知机，输入经过加权和偏置(阈值)后，由激活函数处理后决定输出。
+    (偏置值允许将激活函数向左或向右移位，这可能是成功学习的关键。）
 
     由大量的人工神经元互相连接而形成的复杂网络结构称为人工神经网络（Artificial Neural Network, ANN）
 
@@ -53,7 +54,7 @@
     
     正向正向传播时，输入样本从输入层进入网络，经隐层逐层传递至输出层，如果输出层的实际输出与期望输出(导师信号)不同，则转至误差反向传播；如果输出层的实际输出与期望输出(导师信号)相同，结束学习算法。
     
-    反向反向传播时，将输出误差(期望输出与实际输出之差)按原通路反传计算，通过隐层反向，直至输入层，在反传过程中将误差分摊给各层的各个单元，获得各层各单元的误差信号，并将其作为修正各单元权值的根据。这一计算过程使用梯度下降法完成，在不停地调整各层神经元的权值和阈值后，使误差信号减小到最低限度。
+    反向传播时，将输出误差(期望输出与实际输出之差)按原通路反传计算，通过隐层反向，直至输入层，在反传过程中将误差分摊给各层的各个单元，获得各层各单元的误差信号，并将其作为修正各单元权值的根据。这一计算过程使用梯度下降法完成，在不停地调整各层神经元的权值和阈值后，使误差信号减小到最低限度。
     
     权值和阈值不断调整的过程，就是网络的学习与训练过程，经过信号正向传播与误差反向传播，权值和阈值的调整反复进行，一直进行到预先设定的学习训练次数，或输出误差减小到允许的程度。
     
@@ -62,7 +63,7 @@
 ---
 
 ## 二、数学公式及代码实现：
-本文以实现逻辑回归为例，逻辑回归如图所示，只有一个神经元结点。
+本文以实现逻辑回归(本质上为二分类问题)为例，逻辑回归如图所示，只有一个神经元结点。
 ![avater](https://img-blog.csdn.net/2018061011100253?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NpbmF0XzM1ODIxOTc2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 ### 1. 激活函数
@@ -111,11 +112,15 @@ BP算法分为两个部分：前向传播与反向传播。<br>
 反向传播是采用梯度下降法使误差函数减小，误差函数表示为：
 
 ![pic](https://img-blog.csdn.net/20180610113135722?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NpbmF0XzM1ODIxOTc2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
-其中m为输入数据数目，是输入标签，是激活函数输出，即预测值。<br>
+其中m为输入数据数目，![pic](https://img-blog.csdn.net/20180610113251246?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NpbmF0XzM1ODIxOTc2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)是输入真实标签，![pic](https://img-blog.csdn.net/20180610113353575?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NpbmF0XzM1ODIxOTc2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)是激活函数输出，即预测值。<br>
 
 反向传播过程中使用梯度下降来实现损失函数的减小，需要先求得损失函数J对w和b的偏导分别为:
 
 ![pic](https://img-blog.csdn.net/20180610115507220?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NpbmF0XzM1ODIxOTc2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+：全局成本函数对w的导数，也可以理解为各个样本损失函数对w导数的平均值
+
+![pic](https://img-blog.csdn.net/20180610115515278?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NpbmF0XzM1ODIxOTc2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+：全局成本函数对b的导数，也可以理解为各个样本损失函数对b导数的平均值
 
 ```python
 def BackPropagate(w,b,X,Y):
