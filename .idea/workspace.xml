@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f554bef-8bce-4cd7-ade2-c630cb5655a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core/cluster_analysis/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/cluster_analysis/kmeans.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/cluster_analysis/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/tensorflow/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/tensorflow/tensorflow_demo1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/tensorflow/tensorflow_placeholder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/tensorflow/tensorflow_session.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/tensorflow/tensorflow_variable.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,14 +34,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/cluster_analysis/kmeans.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/face_recognition/is_my_face.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+            <state relative-caret-position="168">
+              <caret line="161" column="55" selection-start-line="161" selection-start-column="55" selection-end-line="161" selection-end-column="55" />
               <folding>
-                <element signature="e#185#203#0" expanded="true" />
+                <element signature="e#222#245#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/tensorflow/tensorflow_placeholder.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="25" column="35" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/ops/array_ops.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="1518" column="42" selection-start-line="1518" selection-start-column="42" selection-end-line="1518" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -55,9 +75,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cv2</find>
-      <find>frontal_face_detector</find>
-      <find>10000</find>
       <find>destroyAllWindows</find>
       <find>100000</find>
       <find>exited</find>
@@ -82,6 +99,12 @@
       <find>predict</find>
       <find>偏置</find>
       <find>Congratulations,cluster complete!</find>
+      <find>global_variables_initializer</find>
+      <find>tf</find>
+      <find>sess</find>
+      <find>placeholder</find>
+      <find>placeholder</find>
+      <find>feed_dict</find>
     </findStrings>
     <replaceStrings>
       <replace>/</replace>
@@ -123,8 +146,13 @@
         <option value="$PROJECT_DIR$/core/syntax_test.py" />
         <option value="$PROJECT_DIR$/core/neural_network/logistic.py" />
         <option value="$PROJECT_DIR$/core/cluster_analysis/README.md" />
-        <option value="$PROJECT_DIR$/core/cluster_analysis/kmeans.py" />
         <option value="$PROJECT_DIR$/core/cluster_analysis/test.txt" />
+        <option value="$PROJECT_DIR$/core/cluster_analysis/kmeans.py" />
+        <option value="$PROJECT_DIR$/core/tensorflow/README.md" />
+        <option value="$PROJECT_DIR$/core/tensorflow/tensorflow_demo1.py" />
+        <option value="$PROJECT_DIR$/core/tensorflow/tensorflow_session.py" />
+        <option value="$PROJECT_DIR$/core/tensorflow/tensorflow_variable.py" />
+        <option value="$PROJECT_DIR$/core/tensorflow/tensorflow_placeholder.py" />
       </list>
     </option>
   </component>
@@ -157,7 +185,13 @@
               <item name="machinelearn" type="b2602c69:ProjectViewProjectNode" />
               <item name="machinelearn" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="cluster_analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="face_recognition" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="machinelearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="machinelearn" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="tensorflow" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -203,7 +237,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.kmeans">
+  <component name="RunManager" selected="Python.tensorflow_variable">
     <configuration name="kmeans" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="machinelearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -218,72 +252,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core/cluster_analysis/kmeans.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="network" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="machinelearn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core/neural_network" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="F:\develop_code\python\machinelearn\core\neural_network\logistic.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="neural_network" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="machinelearn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core/neural_network" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core/neural_network/neural_network.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pyplot" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="machinelearn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core/matplotlib" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core/matplotlib/pyplot.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -314,13 +282,79 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="tensorflow_demo1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="machinelearn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core/tensorflow" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core/tensorflow/tensorflow_demo1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tensorflow_session" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="machinelearn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core/tensorflow" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core/tensorflow/tensorflow_session.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tensorflow_variable" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="machinelearn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core/tensorflow" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core/tensorflow/tensorflow_variable.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.tensorflow_variable" />
+        <item itemvalue="Python.tensorflow_session" />
+        <item itemvalue="Python.tensorflow_demo1" />
         <item itemvalue="Python.kmeans" />
         <item itemvalue="Python.syntax_test" />
-        <item itemvalue="Python.pyplot" />
-        <item itemvalue="Python.network" />
-        <item itemvalue="Python.neural_network" />
       </list>
     </recent_temporary>
   </component>
@@ -355,7 +389,9 @@
       <workItem from="1572432528880" duration="5222000" />
       <workItem from="1572484200078" duration="760000" />
       <workItem from="1572869549905" duration="1137000" />
-      <workItem from="1572875292362" duration="1727000" />
+      <workItem from="1572875292362" duration="1925000" />
+      <workItem from="1572917955109" duration="3003000" />
+      <workItem from="1573719512110" duration="7405000" />
     </task>
     <task id="LOCAL-00001" summary="修改README文件说明">
       <created>1571715964495</created>
@@ -413,11 +449,18 @@
       <option name="project" value="LOCAL" />
       <updated>1572444762468</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="提交聚类分析模块，以及kmeans算法">
+      <created>1572877207936</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1572877207936</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97850000" />
+    <option name="totallyTimeSpent" value="108456000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -430,14 +473,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.21785174" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18835099" />
       <window_info id="Structure" order="1" weight="0.18835099" />
       <window_info id="Favorites" order="2" weight="0.22541603" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32935154" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5802048" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.7696246" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.51194537" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -451,7 +493,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.38880485" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.31467474" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32980332" />
       <window_info anchor="right" id="R Packages" order="5" weight="0.32980332" />
       <window_info anchor="right" id="Database" order="6" weight="0.32980332" />
@@ -508,7 +550,8 @@
     <MESSAGE value="修改神经网络的笔记" />
     <MESSAGE value="添加感知机代码" />
     <MESSAGE value="修改逻辑回归和感知机代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改逻辑回归和感知机代码" />
+    <MESSAGE value="提交聚类分析模块，以及kmeans算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交聚类分析模块，以及kmeans算法" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/machinelearn$train_faces.coverage" NAME="train_faces Coverage Results" MODIFIED="1571800011295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/face_recognition" />
@@ -516,33 +559,20 @@
     <SUITE FILE_PATH="coverage/machinelearn$pyplot.coverage" NAME="pyplot Coverage Results" MODIFIED="1572338985792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/matplotlib" />
     <SUITE FILE_PATH="coverage/machinelearn$set_other_people.coverage" NAME="set_other_people Coverage Results" MODIFIED="1571799430086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/face_recognition" />
     <SUITE FILE_PATH="coverage/machinelearn$network.coverage" NAME="network Coverage Results" MODIFIED="1572271056021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/neural_network" />
+    <SUITE FILE_PATH="coverage/machinelearn$tensorflow_variable.coverage" NAME="tensorflow_variable Coverage Results" MODIFIED="1573736455313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/tensorflow" />
     <SUITE FILE_PATH="coverage/machinelearn$carPlateIdentity.coverage" NAME="carPlateIdentity Coverage Results" MODIFIED="1571796703285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/vehicle_plate_recognition" />
     <SUITE FILE_PATH="coverage/machinelearn$neural_network.coverage" NAME="neural_network Coverage Results" MODIFIED="1572183684531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/neural_network" />
     <SUITE FILE_PATH="coverage/machinelearn$syntax_test.coverage" NAME="syntax_test Coverage Results" MODIFIED="1572444301432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
+    <SUITE FILE_PATH="coverage/machinelearn$tensorflow_demo1.coverage" NAME="tensorflow_demo1 Coverage Results" MODIFIED="1573733800387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/tensorflow" />
     <SUITE FILE_PATH="coverage/machinelearn$get_my_face_opencv.coverage" NAME="get_my_face_opencv Coverage Results" MODIFIED="1571662665723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/face_recognition" />
     <SUITE FILE_PATH="coverage/machinelearn$plateNeuralNet.coverage" NAME="plateNeuralNet Coverage Results" MODIFIED="1571797126771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/vehicle_plate_recognition" />
     <SUITE FILE_PATH="coverage/machinelearn$handwriting_recognition.coverage" NAME="handwriting_recognition Coverage Results" MODIFIED="1571813743132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/handwriting_recognition" />
     <SUITE FILE_PATH="coverage/machinelearn$vehicle_plate_recognition.coverage" NAME="vehicle_plate_recognition Coverage Results" MODIFIED="1571813720619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/vehicle_plate_recognition" />
+    <SUITE FILE_PATH="coverage/machinelearn$tensorflow_session.coverage" NAME="tensorflow_session Coverage Results" MODIFIED="1573735182734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/tensorflow" />
     <SUITE FILE_PATH="coverage/machinelearn$get_my_faces.coverage" NAME="get_my_faces Coverage Results" MODIFIED="1571798413881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/face_recognition" />
-    <SUITE FILE_PATH="coverage/machinelearn$kmeans.coverage" NAME="kmeans Coverage Results" MODIFIED="1572876986739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/cluster_analysis" />
+    <SUITE FILE_PATH="coverage/machinelearn$kmeans.coverage" NAME="kmeans Coverage Results" MODIFIED="1572939883750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/cluster_analysis" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/face_recognition/my_faces/8.jpg" />
-    <entry file="file://$PROJECT_DIR$/core/face_recognition/my_faces/9.jpg" />
-    <entry file="file://$PROJECT_DIR$/core/face_recognition/my_faces/10.jpg" />
-    <entry file="file://$PROJECT_DIR$/core/face_recognition/my_faces/12.jpg" />
-    <entry file="file://$PROJECT_DIR$/core/face_recognition/my_faces/14.jpg" />
-    <entry file="file://$PROJECT_DIR$/core/face_recognition/my_faces/21.jpg" />
-    <entry file="file://$PROJECT_DIR$/core/face_recognition/my_faces/20.jpg" />
-    <entry file="file://$PROJECT_DIR$/core/face_recognition/get_my_face_opencv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-55">
-          <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/vehicle_plate_recognition/charNeuralNet.py" />
-    <entry file="file://$PROJECT_DIR$/core/face_recognition/my_faces/7.jpg" />
     <entry file="file://$PROJECT_DIR$/core/face_recognition/my_faces/4.jpg" />
     <entry file="file://$PROJECT_DIR$/core/face_recognition/my_faces/3.jpg" />
     <entry file="file://$PROJECT_DIR$/core/face_recognition/my_faces/1.jpg" />
@@ -614,13 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/face_recognition/is_my_face.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -796,8 +819,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/cluster_analysis/test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="72">
+          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -808,13 +831,99 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/ops/control_flow_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-175">
+          <caret line="2885" column="13" lean-forward="true" selection-start-line="2885" selection-start-column="13" selection-end-line="2885" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/ops/variables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="1288" column="16" selection-start-line="1288" selection-start-column="16" selection-end-line="1288" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/ops/math_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="1334" column="20" lean-forward="true" selection-start-line="1334" selection-start-column="20" selection-end-line="1334" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/tensorflow/tensorflow_session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/tensorflow/tensorflow_variable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/client/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="786" column="13" selection-start-line="786" selection-start-column="13" selection-end-line="786" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/cluster_analysis/kmeans.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+        <state relative-caret-position="1692">
+          <caret line="94" column="22" lean-forward="true" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="22" />
           <folding>
             <element signature="e#185#203#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/tensorflow/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/tensorflow/tensorflow_demo1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+          <folding>
+            <element signature="e#203#226#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/ops/array_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="1518" column="42" selection-start-line="1518" selection-start-column="42" selection-end-line="1518" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/face_recognition/is_my_face.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="161" column="55" selection-start-line="161" selection-start-column="55" selection-end-line="161" selection-end-column="55" />
+          <folding>
+            <element signature="e#222#245#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/tensorflow/tensorflow_placeholder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="35" />
         </state>
       </provider>
     </entry>
