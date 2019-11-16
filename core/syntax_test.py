@@ -33,3 +33,6 @@ if __name__ == "__main__":
     print("矩阵维度")
     X_shape = np.array(X)
     print(data_X)
+
+    w = np.zeros((10, 1))
+    print("矩阵：",w)

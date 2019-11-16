@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f554bef-8bce-4cd7-ade2-c630cb5655a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core/tensorflow/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/tensorflow/tensorflow_demo1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/tensorflow/tensorflow_placeholder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/tensorflow/tensorflow_session.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/tensorflow/tensorflow_variable.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/neural_network/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/core/neural_network/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/neural_network/logistic.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/neural_network/logistic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/syntax_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/syntax_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +35,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/face_recognition/is_my_face.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
+            <state relative-caret-position="2736">
               <caret line="161" column="55" selection-start-line="161" selection-start-column="55" selection-end-line="161" selection-end-column="55" />
               <folding>
                 <element signature="e#222#245#0" expanded="true" />
@@ -46,20 +44,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/tensorflow/tensorflow_placeholder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="25" column="35" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="35" />
+            <state relative-caret-position="191">
+              <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/neural_network/logistic.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/ops/array_ops.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="1518" column="42" selection-start-line="1518" selection-start-column="42" selection-end-line="1518" selection-end-column="64" />
+        <entry file="file://$PROJECT_DIR$/core/neural_network/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SECOND">
+              <first_editor relative-caret-position="213">
+                <caret line="106" column="7" selection-start-line="106" selection-start-column="7" selection-end-line="106" selection-end-column="7" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -75,7 +85,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>destroyAllWindows</find>
       <find>100000</find>
       <find>exited</find>
       <find>my_faces_path</find>
@@ -103,8 +112,9 @@
       <find>tf</find>
       <find>sess</find>
       <find>placeholder</find>
-      <find>placeholder</find>
       <find>feed_dict</find>
+      <find>for</find>
+      <find>前向</find>
     </findStrings>
     <replaceStrings>
       <replace>/</replace>
@@ -142,9 +152,6 @@
         <option value="$PROJECT_DIR$/core/neural_network/neural_network.py" />
         <option value="$PROJECT_DIR$/core/matplotlib/pyplot.py" />
         <option value="$PROJECT_DIR$/core/neural_network/network.py" />
-        <option value="$PROJECT_DIR$/core/neural_network/README.md" />
-        <option value="$PROJECT_DIR$/core/syntax_test.py" />
-        <option value="$PROJECT_DIR$/core/neural_network/logistic.py" />
         <option value="$PROJECT_DIR$/core/cluster_analysis/README.md" />
         <option value="$PROJECT_DIR$/core/cluster_analysis/test.txt" />
         <option value="$PROJECT_DIR$/core/cluster_analysis/kmeans.py" />
@@ -153,10 +160,13 @@
         <option value="$PROJECT_DIR$/core/tensorflow/tensorflow_session.py" />
         <option value="$PROJECT_DIR$/core/tensorflow/tensorflow_variable.py" />
         <option value="$PROJECT_DIR$/core/tensorflow/tensorflow_placeholder.py" />
+        <option value="$PROJECT_DIR$/core/syntax_test.py" />
+        <option value="$PROJECT_DIR$/core/neural_network/README.md" />
+        <option value="$PROJECT_DIR$/core/neural_network/logistic.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="582" />
     <option name="y" value="6" />
     <option name="width" value="1164" />
@@ -168,7 +178,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -185,18 +194,13 @@
               <item name="machinelearn" type="b2602c69:ProjectViewProjectNode" />
               <item name="machinelearn" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="face_recognition" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="machinelearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="machinelearn" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="tensorflow" type="462c0819:PsiDirectoryNode" />
+              <item name="neural_network" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -237,7 +241,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.tensorflow_variable">
+  <component name="RunManager" selected="Python.syntax_test">
     <configuration name="kmeans" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="machinelearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -350,11 +354,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.syntax_test" />
         <item itemvalue="Python.tensorflow_variable" />
         <item itemvalue="Python.tensorflow_session" />
         <item itemvalue="Python.tensorflow_demo1" />
         <item itemvalue="Python.kmeans" />
-        <item itemvalue="Python.syntax_test" />
       </list>
     </recent_temporary>
   </component>
@@ -392,6 +396,9 @@
       <workItem from="1572875292362" duration="1925000" />
       <workItem from="1572917955109" duration="3003000" />
       <workItem from="1573719512110" duration="7405000" />
+      <workItem from="1573738925122" duration="184000" />
+      <workItem from="1573820997405" duration="1727000" />
+      <workItem from="1573901559384" duration="6329000" />
     </task>
     <task id="LOCAL-00001" summary="修改README文件说明">
       <created>1571715964495</created>
@@ -456,11 +463,18 @@
       <option name="project" value="LOCAL" />
       <updated>1572877207936</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="添加tensorflow学习代码">
+      <created>1573739085142</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1573739085142</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108456000" />
+    <option name="totallyTimeSpent" value="116696000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -474,7 +488,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18835099" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19742814" />
       <window_info id="Structure" order="1" weight="0.18835099" />
       <window_info id="Favorites" order="2" weight="0.22541603" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -551,7 +565,8 @@
     <MESSAGE value="添加感知机代码" />
     <MESSAGE value="修改逻辑回归和感知机代码" />
     <MESSAGE value="提交聚类分析模块，以及kmeans算法" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交聚类分析模块，以及kmeans算法" />
+    <MESSAGE value="添加tensorflow学习代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加tensorflow学习代码" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/machinelearn$train_faces.coverage" NAME="train_faces Coverage Results" MODIFIED="1571800011295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/face_recognition" />
@@ -562,8 +577,8 @@
     <SUITE FILE_PATH="coverage/machinelearn$tensorflow_variable.coverage" NAME="tensorflow_variable Coverage Results" MODIFIED="1573736455313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/tensorflow" />
     <SUITE FILE_PATH="coverage/machinelearn$carPlateIdentity.coverage" NAME="carPlateIdentity Coverage Results" MODIFIED="1571796703285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/vehicle_plate_recognition" />
     <SUITE FILE_PATH="coverage/machinelearn$neural_network.coverage" NAME="neural_network Coverage Results" MODIFIED="1572183684531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/neural_network" />
-    <SUITE FILE_PATH="coverage/machinelearn$syntax_test.coverage" NAME="syntax_test Coverage Results" MODIFIED="1572444301432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
     <SUITE FILE_PATH="coverage/machinelearn$tensorflow_demo1.coverage" NAME="tensorflow_demo1 Coverage Results" MODIFIED="1573733800387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/tensorflow" />
+    <SUITE FILE_PATH="coverage/machinelearn$syntax_test.coverage" NAME="syntax_test Coverage Results" MODIFIED="1573907911720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
     <SUITE FILE_PATH="coverage/machinelearn$get_my_face_opencv.coverage" NAME="get_my_face_opencv Coverage Results" MODIFIED="1571662665723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/face_recognition" />
     <SUITE FILE_PATH="coverage/machinelearn$plateNeuralNet.coverage" NAME="plateNeuralNet Coverage Results" MODIFIED="1571797126771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/vehicle_plate_recognition" />
     <SUITE FILE_PATH="coverage/machinelearn$handwriting_recognition.coverage" NAME="handwriting_recognition Coverage Results" MODIFIED="1571813743132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/handwriting_recognition" />
@@ -725,23 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/neural_network/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="2160">
-            <caret line="120" selection-start-line="120" selection-end-line="120" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/syntax_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SECOND">
@@ -773,13 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="35" selection-start-column="35" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/neural_network/logistic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="128" column="25" lean-forward="true" selection-start-line="128" selection-start-column="25" selection-end-line="128" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -903,16 +894,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/ops/array_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="1518" column="42" selection-start-line="1518" selection-start-column="42" selection-end-line="1518" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/face_recognition/is_my_face.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
+        <state relative-caret-position="2736">
           <caret line="161" column="55" selection-start-line="161" selection-start-column="55" selection-end-line="161" selection-end-column="55" />
           <folding>
             <element signature="e#222#245#0" expanded="true" />
@@ -922,8 +906,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/tensorflow/tensorflow_placeholder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="25" column="35" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="35" />
+        <state relative-caret-position="191">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/syntax_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="37" column="18" lean-forward="true" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/python/ops/array_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="1518" column="42" selection-start-line="1518" selection-start-column="42" selection-end-line="1518" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/neural_network/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="213">
+            <caret line="106" column="7" selection-start-line="106" selection-start-column="7" selection-end-line="106" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/neural_network/logistic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="59" column="23" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
         </state>
       </provider>
     </entry>

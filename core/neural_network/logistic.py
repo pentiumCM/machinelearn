@@ -42,23 +42,28 @@ def backPropagate(w, b, X, Y):
     """
     BP算法分为两个部分：前向传播与反向传播。前向传播：计算出神经网络的输出。反向传播是采用梯度下降法使误差函数减小
 
-    :param w: 权重
+    :param w: 权重向量
     :param b: 偏置
-    :param X: 输入数据
+    :param X: 输入数据向量
     :param Y: 输入标签。逻辑回归是二分类问题,Y为0/1
     :return: 梯度和损失函数的值
     """
     # 输入数据数目
     num = Y.shape[0]
 
-    # 前向传播
-    A = sigmoid(np.dot(w.T, X) + b)
-    # 损失函数采用交叉熵算法。
-    cost = -1 / num * np.sum(Y * np.log(A) + (1 - Y) * np.log(1 - A))
+    Z = np.dot(w.T,X) + b       # z = wTX + b.使用向量化同时计算，消除了代码中的显示的for循环
+    # 正向传播
+    A = sigmoid(Z)              # 整个训练集的预测值 A = [a1,a2,......,am]
+
+    # 损失函数,损失函数采用交叉熵算法。
+    loss = Y * np.log(A) + (1 - Y) * np.log(1 - A)
+    # 成本函数是w和b的函数,是各个样本损失函数之和的1/m,衡量了参数w,b在训练集上的效果
+    cost = -1 / num * np.sum(loss)
 
     # 反向传播,求出权值w和偏置b的导数
-    dw = 1 / num * np.dot(X, (A - Y).T)
-    db = 1 / num * np.sum(A - Y)
+    dz = A - Y;                 # dz = [a1-y1,.....,am-ym]
+    dw = 1 / num * np.dot(X, dz.T)
+    db = 1 / num * np.sum(dz)
 
     # 用字典存储dw和db
     gradients = {"dw": dw,

@@ -103,8 +103,8 @@ def initializeParamWithZeros(dim):
 
 ### 3.BP算法
 
-BP算法分为两个部分：前向传播与反向传播。<br>
-逻辑回归中前向传播用公式表示为：
+BP算法分为两个部分正向传播与反向传播。<br>
+逻辑回归中正向传播用公式表示为：
 
 ![avater](https://img-blog.csdn.net/20180610112105596?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NpbmF0XzM1ODIxOTc2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 其中X是输入数据，A是输出数据。<br>
@@ -135,7 +135,7 @@ def BackPropagate(w,b,X,Y):
     #输入数据数目
     num = Y.shape[0]
  
-    #前向传播
+    #正向传播
     A = sigmoid(np.dot(w.T,X) + b)
     cost = -1 / num * np.sum(Y * np.log(A) + (1 - Y) * np.log(1 - A))
  
