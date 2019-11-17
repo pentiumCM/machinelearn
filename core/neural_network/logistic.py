@@ -49,7 +49,7 @@ def backPropagate(w, b, X, Y):
     :return: 梯度和损失函数的值
     """
     # 输入数据数目
-    num = Y.shape[0]
+    num = Y.shape[1]
 
     Z = np.dot(w.T,X) + b       # z = wTX + b.使用向量化同时计算，消除了代码中的显示的for循环
     # 正向传播
@@ -57,7 +57,7 @@ def backPropagate(w, b, X, Y):
 
     # 损失函数,损失函数采用交叉熵算法。
     loss = Y * np.log(A) + (1 - Y) * np.log(1 - A)
-    # 成本函数是w和b的函数,是各个样本损失函数之和的1/m,衡量了参数w,b在训练集上的效果
+    # 成本函数是w和b的函数,是1到m项损失函数的平均,衡量了参数w,b在训练集上的效果
     cost = -1 / num * np.sum(loss)
 
     # 反向传播,求出权值w和偏置b的导数
@@ -121,7 +121,7 @@ def predict(w, b, X, Y):
     :return:  预测概率大于0.5的
     """
     # 获取输入数目m
-    m = Y.shape[0]
+    m = X.shape[1]
     # 存储预测结果
     Y_prediction = np.zeros((1, m))
     w = w.reshape(X.shape[0], 1)
@@ -130,7 +130,7 @@ def predict(w, b, X, Y):
     A = sigmoid(np.dot(w.T, X) + b)
 
     # 开始预测
-    for i in range(A.shape[0]):
+    for i in range(A.shape[1]):
         if A[0, i] > 0.5:
             Y_prediction[0, i] = 1
         else:
@@ -139,9 +139,10 @@ def predict(w, b, X, Y):
 
 
 if __name__ == "__main__":
-    # X为横坐标,Y为纵坐标
+    # X为横坐标,Y为纵坐标。 相当于两个属性x1,x2
     X = [0, 1.5, 2, 2, 2.25, 2.8, 3.2, 4]
     Y = [1.5, 3, 4, 3, 0.5, 2.8, 1.35, 4]
+
     label = [1, 1, 1, 1, 0, 0, 0, 0]
 
     # 1类为蓝色, 0类为红色
