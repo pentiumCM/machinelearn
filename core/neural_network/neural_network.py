@@ -46,10 +46,11 @@ def initilize_with_zeros(dim):
     return w, b
 
 
-# 3. 前向传播函数
+# 3. 正向传播函数
 def forward_propagate(w, b, X, Y):
     """
-    前向传播函数中，先是通过激活函数直接表示了感知机输出的预测值A，然后通过定义的交叉熵损失函数计算了损失cost，最后根据损失函数计算了权值 w 和偏置 b的梯度.
+    正向传播函数中，先是通过激活函数直接表示了感知机输出的预测值A，
+    然后通过定义的交叉熵损失函数计算了损失cost，最后根据损失函数计算了权值 w 和偏置 b的梯度.
 
     :param w: 权值
     :param b: 偏置
@@ -57,9 +58,10 @@ def forward_propagate(w, b, X, Y):
     :param Y: 样本数据的真实结果
     :return:  梯度结果grads的字典和损失cost
     """
+
+    # 输入数据数目
     m = X.shape[1]
-    # A = sigmoid(wx +b)
-    A = sigmoid(np.dot(w.T, X) + b)
+    A = sigmoid(np.dot(w.T, X) + b)     # A = sigmoid(wx +b)
     # 损失函数采用交叉熵损失
     cost = -1 / m * np.sum(Y * np.log(A) + (1 - Y) * np.log(1 - A))
     dw = np.dot(X, (A - Y).T) / m
@@ -79,7 +81,7 @@ def forward_propagate(w, b, X, Y):
 def backward_propagate(w, b, X, Y, num_iterations, learning_rate, print_cost=False):
     """
     计算每一步的当前损失cost,根据损失cost对权值w进行更新
-    先建立了一个损失列表容器，然后将前向传播函数放进去执行迭代操作，计算每一步的当前损失cost和梯度grad，
+    先建立了一个损失列表容器，然后将正向传播函数放进去执行迭代操作，计算每一步的当前损失cost和梯度grad，
     利用梯度下降法对权值w进行更新，并用字典封装迭代结束时的参数和梯度进行返回。
 
     :param w: 初始权值
