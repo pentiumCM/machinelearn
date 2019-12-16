@@ -61,7 +61,7 @@ def forward_propagate(w, b, X, Y):
     cost = -1 / num * np.sum(loss)
 
     # 反向传播,求出权值w和偏置b的导数
-    dz = A - Y;  # dz = [a1-y1,.....,am-ym]
+    dz = A - Y  # dz = [a1-y1,.....,am-ym]
     dw = 1 / num * np.dot(X, dz.T)  # dw = 1/m * [x1 * dz1 + ... + xm * dzm]
     db = 1 / num * np.sum(dz)  # db = 1/m * (dz1 + dz2 + ... + dzm)
 
@@ -201,11 +201,17 @@ if __name__ == "__main__":
     learning_rate = 0.5  # 学习率
     w, b = init_param_withZeros(data_X.shape[0])  # 初始化w,b
     # 开始训练
-    w, b, gradients, costs = backward_propagate(w, b, data_X, data_label, iters, learning_rate)
+    w, b, gradients, costs = backward_propagate(
+        w, b, data_X, data_label, iters, learning_rate)
     Y_prediction = predict(w, b, data_X, data_label)
 
     # pyplot画"损失函数-迭代次数"的线性图
-    plot_line_chart(costs, 'iterations', 'cost', "Learning rate =" + str(learning_rate))
+    plot_line_chart(
+        costs,
+        'iterations',
+        'cost',
+        "Learning rate =" +
+        str(learning_rate))
 
     # 测试输入数据
     point = input("Please enter a coordinates:\n")

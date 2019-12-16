@@ -2,9 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f554bef-8bce-4cd7-ade2-c630cb5655a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machinelearn/bayes/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machinelearn/bayes/naive_bayes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machinelearn/scikit_learn/GA_BP.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machinelearn/scikit_learn/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machinelearn/scikit_learn/sklearn_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/machinelearn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/machinelearn.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/neural_network/logistic.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/neural_network/logistic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/neural_network/neural_network.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/neural_network/neural_network.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/cluster_analysis/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/cluster_analysis/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/cluster_analysis/kmeans.py" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/cluster_analysis/kmeans.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/cluster_analysis/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/cluster_analysis/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/face_recognition/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/face_recognition/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/face_recognition/checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/face_recognition/checkpoint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/face_recognition/get_my_face_opencv.py" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/face_recognition/get_my_face_opencv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/face_recognition/get_my_faces.py" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/face_recognition/get_my_faces.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/face_recognition/is_my_face.py" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/face_recognition/is_my_face.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/face_recognition/set_other_people.py" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/face_recognition/set_other_people.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/face_recognition/tmp/events.out.tfevents.1571673012.DESKTOP-R3ST3FI" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/face_recognition/tmp/events.out.tfevents.1571673012.DESKTOP-R3ST3FI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/face_recognition/tmp/events.out.tfevents.1571709313.DESKTOP-R3ST3FI" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/face_recognition/tmp/events.out.tfevents.1571709313.DESKTOP-R3ST3FI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/face_recognition/tmp/events.out.tfevents.1571798820.DESKTOP-R3ST3FI" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/face_recognition/tmp/events.out.tfevents.1571798820.DESKTOP-R3ST3FI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/face_recognition/tmp/events.out.tfevents.1571800017.DESKTOP-R3ST3FI" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/face_recognition/tmp/events.out.tfevents.1571800017.DESKTOP-R3ST3FI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/face_recognition/train_faces.model-100.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/face_recognition/train_faces.model-100.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/face_recognition/train_faces.model-100.index" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/face_recognition/train_faces.model-100.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/face_recognition/train_faces.model-100.meta" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/face_recognition/train_faces.model-100.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/face_recognition/train_faces.py" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/face_recognition/train_faces.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/handwriting_recognition/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/handwriting_recognition/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/handwriting_recognition/handwriting_recognition.py" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/handwriting_recognition/handwriting_recognition.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/matplotlib/pyplot.py" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/matplotlib/pyplot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/neural_network/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/neural_network/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/neural_network/logistic.py" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/neural_network/logistic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/neural_network/neural_network.py" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/neural_network/neural_network.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/syntax_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/syntax_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/tensorflow/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/tensorflow/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/tensorflow/tensorflow_demo1.py" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/tensorflow/tensorflow_demo1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/tensorflow/tensorflow_placeholder.py" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/tensorflow/tensorflow_placeholder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/tensorflow/tensorflow_session.py" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/tensorflow/tensorflow_session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/tensorflow/tensorflow_variable.py" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/tensorflow/tensorflow_variable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/vehicle_plate_recognition/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/vehicle_plate_recognition/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/vehicle_plate_recognition/result2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/vehicle_plate_recognition/result2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/vehicle_plate_recognition/vehicle_plate_recognition.py" beforeDir="false" afterPath="$PROJECT_DIR$/machinelearn/vehicle_plate_recognition/vehicle_plate_recognition.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,14 +69,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/neural_network/logistic.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/machinelearn/bayes/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1393">
-              <caret line="118" column="24" selection-start-line="118" selection-start-column="24" selection-end-line="118" selection-end-column="24" />
+            <state relative-caret-position="144">
+              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="383" column="34" selection-start-line="383" selection-start-column="26" selection-end-line="383" selection-end-column="34" />
               <folding>
-                <element signature="e#190#208#0" expanded="true" />
+                <element signature="e#7429#8218#1" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/machinelearn/scikit_learn/GA_BP.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+              <folding>
+                <element signature="e#201#229#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neural_network/multilayer_perceptron.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7380">
+              <caret line="429" column="36" selection-start-line="429" selection-start-column="36" selection-end-line="429" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/sklearn/preprocessing/label.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9036">
+              <caret line="518" selection-start-line="518" selection-end-line="518" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/numpy/core/_asarray.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1458">
+              <caret line="84" column="18" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/scipy/sparse/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21726">
+              <caret line="1215" selection-start-line="1215" selection-end-line="1215" />
             </state>
           </provider>
         </entry>
@@ -54,11 +149,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Can't load save_path when it is None</find>
-      <find>def</find>
-      <find>drawContours</find>
-      <find>model.ckpt-510</find>
-      <find>model</find>
       <find>\</find>
       <find>accuracy</find>
       <find>cf</find>
@@ -84,6 +174,11 @@
       <find>sigmoid_derivative</find>
       <find>前向</find>
       <find>title</find>
+      <find>warning</find>
+      <find>fetch_20newsgroups</find>
+      <find>fetchers</find>
+      <find>datasets</find>
+      <find>SVC</find>
     </findStrings>
     <replaceStrings>
       <replace>/</replace>
@@ -111,7 +206,6 @@
         <option value="$PROJECT_DIR$/core/face_recognition/train_faces.py" />
         <option value="$PROJECT_DIR$/core/face_recognition/is_my_face.py" />
         <option value="$PROJECT_DIR$/core/handwriting_recognition/cnn.py" />
-        <option value="$PROJECT_DIR$/docs/conf.py" />
         <option value="$PROJECT_DIR$/core/vehicle_plate_recognition/README.md" />
         <option value="$PROJECT_DIR$/core/face_recognition/get_my_faces.py" />
         <option value="$PROJECT_DIR$/core/handwriting_recognition/handwriting_recognition.py" />
@@ -133,14 +227,18 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/core/neural_network/neural_network.py" />
         <option value="$PROJECT_DIR$/core/neural_network/logistic.py" />
+        <option value="$PROJECT_DIR$/docs/conf.py" />
+        <option value="$PROJECT_DIR$/machinelearn/bayes/__init__.py" />
+        <option value="$PROJECT_DIR$/machinelearn/bayes/naive_bayes.py" />
+        <option value="$PROJECT_DIR$/machinelearn/scikit_learn/sklearn_test.py" />
+        <option value="$PROJECT_DIR$/machinelearn/scikit_learn/GA_BP.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="582" />
-    <option name="y" value="6" />
-    <option name="width" value="1164" />
-    <option name="height" value="737" />
+    <option name="x" value="119" />
+    <option name="width" value="913" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -148,6 +246,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,28 +257,27 @@
             <path>
               <item name="machinelearn" type="b2602c69:ProjectViewProjectNode" />
               <item name="machinelearn" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="machinelearn" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="machinelearn" type="b2602c69:ProjectViewProjectNode" />
               <item name="machinelearn" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="neural_network" type="462c0819:PsiDirectoryNode" />
+              <item name="machinelearn" type="462c0819:PsiDirectoryNode" />
+              <item name="scikit_learn" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/core/cluster_analysis" />
+    <property name="last_opened_file_path" value="F:/develop_tools/python/python-3.6.8/Scripts/pylint.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="yiiguxing.plugin.translate" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -211,7 +309,51 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.logistic">
+  <component name="RunManager" selected="Python.GA_BP">
+    <configuration name="GA_BP" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="machinelearn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/machinelearn/scikit_learn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/machinelearn/scikit_learn/GA_BP.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="machinelearn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="logistic" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="machinelearn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -228,6 +370,50 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core/neural_network/logistic.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="naive_bayes" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="machinelearn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/machinelearn/bayes" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/machinelearn/bayes/naive_bayes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sklearn_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="machinelearn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/machinelearn/scikit_learn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/machinelearn/scikit_learn/sklearn_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -256,79 +442,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tensorflow_demo1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="machinelearn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core/tensorflow" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core/tensorflow/tensorflow_demo1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="tensorflow_session" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="machinelearn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core/tensorflow" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core/tensorflow/tensorflow_session.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="tensorflow_variable" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="machinelearn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core/tensorflow" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core/tensorflow/tensorflow_variable.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.GA_BP" />
+        <item itemvalue="Python.sklearn_test" />
+        <item itemvalue="Python.naive_bayes" />
         <item itemvalue="Python.logistic" />
         <item itemvalue="Python.syntax_test" />
-        <item itemvalue="Python.tensorflow_variable" />
-        <item itemvalue="Python.tensorflow_session" />
-        <item itemvalue="Python.tensorflow_demo1" />
       </list>
     </recent_temporary>
   </component>
@@ -371,7 +491,23 @@
       <workItem from="1573901559384" duration="7342000" />
       <workItem from="1573956690155" duration="7987000" />
       <workItem from="1574085375046" duration="1378000" />
-      <workItem from="1574129918467" duration="6357000" />
+      <workItem from="1574129918467" duration="8497000" />
+      <workItem from="1574236671322" duration="1190000" />
+      <workItem from="1574767229634" duration="184000" />
+      <workItem from="1574767492786" duration="4652000" />
+      <workItem from="1574772234220" duration="88000" />
+      <workItem from="1574772415139" duration="473000" />
+      <workItem from="1574772928846" duration="335000" />
+      <workItem from="1574833805689" duration="8739000" />
+      <workItem from="1574945337604" duration="2112000" />
+      <workItem from="1574949499375" duration="407000" />
+      <workItem from="1575007663559" duration="290000" />
+      <workItem from="1575024702478" duration="46000" />
+      <workItem from="1576153182205" duration="9837000" />
+      <workItem from="1576224849197" duration="3233000" />
+      <workItem from="1576228135801" duration="1296000" />
+      <workItem from="1576377022751" duration="1996000" />
+      <workItem from="1576468952447" duration="443000" />
     </task>
     <task id="LOCAL-00001" summary="修改README文件说明">
       <created>1571715964495</created>
@@ -464,11 +600,18 @@
       <option name="project" value="LOCAL" />
       <updated>1574086662043</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="修改逻辑回归的图表代码">
+      <created>1574136624034</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1574136624034</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133431000" />
+    <option name="totallyTimeSpent" value="170892000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -481,31 +624,33 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2065053" />
-      <window_info id="Structure" order="1" weight="0.13313162" />
-      <window_info id="Favorites" order="2" weight="0.22541603" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49829352" visible="true" weight="0.25416037" />
+      <window_info id="Structure" order="1" weight="0.24281392" />
+      <window_info id="Favorites" order="2" sideWeight="0.5017065" side_tool="true" weight="0.21558245" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32935154" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4453925" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.53583616" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.77303755" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5153584" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32935154" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.53754264" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.6194539" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32593855" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32764506" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32935154" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.7525597" />
+      <window_info anchor="bottom" id="Statistic" order="13" weight="0.6331058" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.408472" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.7193646" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32980332" />
       <window_info anchor="right" id="R Packages" order="5" weight="0.32980332" />
       <window_info anchor="right" id="Database" order="6" weight="0.32980332" />
+      <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="7" side_tool="true" weight="0.32980332" />
+      <window_info anchor="right" id="Word Book" order="8" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -563,10 +708,23 @@
     <MESSAGE value="添加tensorflow学习代码" />
     <MESSAGE value="修改逻辑回归代码" />
     <MESSAGE value="修改readme文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改readme文件" />
+    <MESSAGE value="修改逻辑回归的图表代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改逻辑回归的图表代码" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/machinelearn/scikit_learn/GA_BP.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/machinelearn/scikit_learn/GA_BP.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -578,6 +736,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/machinelearn$train_faces.coverage" NAME="train_faces Coverage Results" MODIFIED="1571800011295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/face_recognition" />
+    <SUITE FILE_PATH="coverage/machinelearn$GA_BP.coverage" NAME="GA_BP Coverage Results" MODIFIED="1576228194932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/machinelearn/scikit_learn" />
     <SUITE FILE_PATH="coverage/machinelearn$is_my_face.coverage" NAME="is_my_face Coverage Results" MODIFIED="1571813679020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/face_recognition" />
     <SUITE FILE_PATH="coverage/machinelearn$pyplot.coverage" NAME="pyplot Coverage Results" MODIFIED="1572338985792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/matplotlib" />
     <SUITE FILE_PATH="coverage/machinelearn$set_other_people.coverage" NAME="set_other_people Coverage Results" MODIFIED="1571799430086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/face_recognition" />
@@ -590,6 +749,7 @@
     <SUITE FILE_PATH="coverage/machinelearn$get_my_face_opencv.coverage" NAME="get_my_face_opencv Coverage Results" MODIFIED="1571662665723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/face_recognition" />
     <SUITE FILE_PATH="coverage/machinelearn$plateNeuralNet.coverage" NAME="plateNeuralNet Coverage Results" MODIFIED="1571797126771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/vehicle_plate_recognition" />
     <SUITE FILE_PATH="coverage/machinelearn$logistic.coverage" NAME="logistic Coverage Results" MODIFIED="1574136120107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/neural_network" />
+    <SUITE FILE_PATH="coverage/machinelearn$sklearn_test.coverage" NAME="sklearn_test Coverage Results" MODIFIED="1576166094048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/machinelearn/scikit_learn" />
     <SUITE FILE_PATH="coverage/machinelearn$handwriting_recognition.coverage" NAME="handwriting_recognition Coverage Results" MODIFIED="1571813743132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/handwriting_recognition" />
     <SUITE FILE_PATH="coverage/machinelearn$vehicle_plate_recognition.coverage" NAME="vehicle_plate_recognition Coverage Results" MODIFIED="1571813720619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/vehicle_plate_recognition" />
     <SUITE FILE_PATH="coverage/machinelearn$tensorflow_session.coverage" NAME="tensorflow_session Coverage Results" MODIFIED="1573735182734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/tensorflow" />
@@ -597,152 +757,7 @@
     <SUITE FILE_PATH="coverage/machinelearn$kmeans.coverage" NAME="kmeans Coverage Results" MODIFIED="1572939883750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/cluster_analysis" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/face_recognition/my_faces/4.jpg" />
-    <entry file="file://$PROJECT_DIR$/core/face_recognition/my_faces/3.jpg" />
-    <entry file="file://$PROJECT_DIR$/core/face_recognition/my_faces/1.jpg" />
-    <entry file="file://$PROJECT_DIR$/core/face_recognition/other_faces/2.jpg" />
-    <entry file="file://$PROJECT_DIR$/core/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/vehicle_plate_recognition/carPlateIdentity.py" />
-    <entry file="file://$PROJECT_DIR$/core/vehicle_plate_recognition/plateNeuralNet.py" />
-    <entry file="file://$PROJECT_DIR$/core/face_recognition/train_faces.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-          <folding>
-            <element signature="e#214#237#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/vehicle_plate_recognition/result2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/conf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="70" selection-start-line="21" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/contrib/learn/python/learn/datasets/mnist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="210" column="4" selection-start-line="210" selection-start-column="4" selection-end-line="210" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/face_recognition/checkpoint">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/face_recognition/get_my_faces.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/develop_tools/PyCharm/PyCharm-config/.PyCharm2019.1/system/python_stubs/-364645637/cv2/cv2/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="847" column="13" selection-start-line="847" selection-end-line="847" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/vehicle_plate_recognition/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor>
-            <caret column="17" selection-start-column="17" selection-end-column="17" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/vehicle_plate_recognition/vehicle_plate_recognition.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/handwriting_recognition/handwriting_recognition.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="125" column="33" selection-start-line="125" selection-start-column="33" selection-end-line="125" selection-end-column="33" />
-          <folding>
-            <element signature="e#220#243#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/face_recognition/set_other_people.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#195#205#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/handwriting_recognition/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="18">
-            <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="4" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/numpy/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/numpy/lib/function_base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="294" column="7" lean-forward="true" selection-start-line="294" selection-start-column="7" selection-end-line="294" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/develop_tools/PyCharm/PyCharm-config/.PyCharm2019.1/system/python_stubs/-364645637/numpy/core/_multiarray_umath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="781" column="6" selection-start-line="781" selection-start-column="6" selection-end-line="781" selection-end-column="6" />
-          <folding>
-            <element signature="e#28213#32641#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/develop_tools/python/python-3.6.8/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="320" selection-start-line="320" selection-end-line="320" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/numpy/core/function_base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="43" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/face_recognition/README.md">
+    <entry file="file://$PROJECT_DIR$/machinelearn/face_recognition/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="162">
@@ -759,7 +774,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/cluster_analysis/README.md">
+    <entry file="file://$PROJECT_DIR$/machinelearn/cluster_analysis/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="72">
@@ -769,7 +784,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/matplotlib/pyplot.py">
+    <entry file="file://$PROJECT_DIR$/machinelearn/matplotlib/pyplot.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
@@ -793,7 +808,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/cluster_analysis/test.txt">
+    <entry file="file://$PROJECT_DIR$/machinelearn/cluster_analysis/test.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
@@ -828,14 +843,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/tensorflow/tensorflow_session.py">
+    <entry file="file://$PROJECT_DIR$/machinelearn/tensorflow/tensorflow_session.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/tensorflow/tensorflow_variable.py">
+    <entry file="file://$PROJECT_DIR$/machinelearn/tensorflow/tensorflow_variable.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
@@ -849,7 +864,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/cluster_analysis/kmeans.py">
+    <entry file="file://$PROJECT_DIR$/machinelearn/cluster_analysis/kmeans.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1692">
           <caret line="94" column="22" lean-forward="true" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="22" />
@@ -859,7 +874,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/tensorflow/README.md">
+    <entry file="file://$PROJECT_DIR$/machinelearn/tensorflow/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor>
@@ -869,20 +884,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/tensorflow/tensorflow_demo1.py">
+    <entry file="file://$PROJECT_DIR$/machinelearn/tensorflow/tensorflow_demo1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="101">
           <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
           <folding>
             <element signature="e#203#226#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/syntax_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="37" column="18" lean-forward="true" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -893,7 +901,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/face_recognition/is_my_face.py">
+    <entry file="file://$PROJECT_DIR$/machinelearn/face_recognition/is_my_face.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2736">
           <caret line="161" column="55" selection-start-line="161" selection-start-column="55" selection-end-line="161" selection-end-column="55" />
@@ -903,20 +911,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/tensorflow/tensorflow_placeholder.py">
+    <entry file="file://$PROJECT_DIR$/machinelearn/tensorflow/tensorflow_placeholder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/neural_network/README.md">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="2791" column="12" lean-forward="true" selection-start-line="2791" selection-start-column="12" selection-end-line="2791" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machinelearn/neural_network/neural_network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="183" column="41" selection-start-line="183" selection-start-column="35" selection-end-line="183" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neighbors/lof.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pip/_vendor/distlib/locators.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/sklearn/linear_model/logistic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-486">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#364#378#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/tensorflow/contrib/distributions/python/ops/logistic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1728" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machinelearn/neural_network/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="1908">
-            <caret line="106" column="7" selection-start-line="106" selection-start-column="7" selection-end-line="106" selection-end-column="7" />
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-224">
+            <caret line="99" column="9" lean-forward="true" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machinelearn/neural_network/logistic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+          <folding>
+            <element signature="e#198#216#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -930,26 +990,163 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/matplotlib/pyplot.py">
+    <entry file="file://$PROJECT_DIR$/machinelearn/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machinelearn/syntax_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="37" column="18" lean-forward="true" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/twenty_newsgroups.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/sklearn/feature_extraction/text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="694" column="77" selection-start-line="688" selection-end-line="697" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/sklearn/model_selection/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-637">
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="41" lean-forward="true" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+          <folding>
+            <element signature="e#194#230#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/sklearn/svm/classes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
-          <caret line="2791" column="12" lean-forward="true" selection-start-line="2791" selection-start-column="12" selection-end-line="2791" selection-end-column="12" />
+          <caret line="428" column="6" selection-start-line="428" selection-start-column="6" selection-end-line="428" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/neural_network/neural_network.py">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="183" column="41" selection-start-line="183" selection-start-column="35" selection-end-line="183" selection-end-column="41" />
+        <state relative-caret-position="203">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/neural_network/logistic.py">
+    <entry file="file://F:/develop_tools/python/python-3.6.8/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1393">
-          <caret line="118" column="24" selection-start-line="118" selection-start-column="24" selection-end-line="118" selection-end-column="24" />
+        <state relative-caret-position="50">
+          <caret line="308" selection-start-line="308" selection-end-line="308" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/sklearn/utils/validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="577" selection-start-line="577" selection-end-line="577" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/sklearn/svm/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-39">
+          <caret line="557" column="8" selection-start-line="557" selection-start-column="8" selection-end-line="557" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machinelearn/bayes/naive_bayes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machinelearn/scikit_learn/sklearn_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
           <folding>
-            <element signature="e#190#208#0" expanded="true" />
+            <element signature="e#197#225#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machinelearn/bayes/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machinelearn/scikit_learn/GA_BP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+          <folding>
+            <element signature="e#201#229#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/sklearn/neural_network/multilayer_perceptron.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7380">
+          <caret line="429" column="36" selection-start-line="429" selection-start-column="36" selection-end-line="429" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/sklearn/preprocessing/label.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9036">
+          <caret line="518" selection-start-line="518" selection-end-line="518" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/numpy/core/_asarray.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1458">
+          <caret line="84" column="18" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/scipy/sparse/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21726">
+          <caret line="1215" selection-start-line="1215" selection-end-line="1215" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/sklearn/datasets/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="383" column="34" selection-start-line="383" selection-start-column="26" selection-end-line="383" selection-end-column="34" />
+          <folding>
+            <element signature="e#7429#8218#1" />
           </folding>
         </state>
       </provider>
