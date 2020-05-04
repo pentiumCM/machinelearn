@@ -20,6 +20,7 @@ from sklearn.model_selection import train_test_split
 
 import docs.conf as conf
 
+
 my_faces_path = conf.facedataset_dir + 'my_faces'
 other_faces_path = conf.facedataset_dir + 'other_faces'
 size = 64

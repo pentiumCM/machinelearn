@@ -5,101 +5,105 @@
 @Email   : 842679178@qq.com
 @Software: PyCharm
 @File    : kmeans.py
-@Time    : 2019/11/4 22:01
-@desc	 : kmeans聚类算法
+@Time    : 2019/12/22 21:42
+@desc	 : numpy原生实现
 '''
 
 import numpy as np
 import matplotlib.pyplot as plt
 
+def load_data_set(fileName):
+    '''
+    加载测试数据集，返回一个列表，列表的元素是一个坐标
+    '''
+    dataList = []
+    with open(fileName) as fr:
+        for line in fr.readlines():
+            curLine = line.strip().split('\t')
+            fltLine = list(map(float, curLine))
+            dataList.append(fltLine)
+    return dataList
 
-# 加载数据
-def loadDataSet(fileName):
-    data = np.loadtxt(fileName, delimiter='\t')
-    return data
 
-
-# 欧氏距离计算
-def distEclud(x, y):
-    return np.sqrt(np.sum((x - y) ** 2))  # 计算欧氏距离
-
-
-# 为给定数据集构建一个包含K个随机质心的集合
 def randCent(dataSet, k):
-    m, n = dataSet.shape
-    centroids = np.zeros((k, n))
-    for i in range(k):
-        index = int(np.random.uniform(0, m))  #
-        centroids[i, :] = dataSet[index, :]
+    '''
+    1.随机生成k个初始的聚类中心
+    '''
+    n = np.shape(dataSet)[1]  # n表示数据集的维度
+    centroids = np.mat(np.zeros((k, n)))
+    for j in range(n):
+        minJ = min(dataSet[:, j])
+        rangeJ = float(max(dataSet[:, j]) - minJ)
+        centroids[:, j] = np.mat(minJ + rangeJ * np.random.rand(k, 1))
     return centroids
 
 
-# kmeans聚类
-def KMeans(dataSet, k):
-    m = np.shape(dataSet)[0]  # 行的数目
-    # 第一列存样本属于哪一簇
-    # 第二列存样本的到簇的中心点的误差
+def kMeans(dataSet, k):
+    '''
+    2.KMeans算法，返回最终的质心坐标和每个点所在的簇已经算法的迭代次数
+    '''
+    m = np.shape(dataSet)[0]  # m表示数据集的长度（个数）
     clusterAssment = np.mat(np.zeros((m, 2)))
-    clusterChange = True
 
-    # 第1步 初始化centroids
-    centroids = randCent(dataSet, k)
-    while clusterChange:
-        clusterChange = False
-
-        # 遍历所有的样本（行数）
+    centroids = randCent(dataSet, k)  # 保存k个初始质心的坐标
+    clusterChanged = True
+    iterIndex = 1  # 迭代次数
+    while clusterChanged:
+        clusterChanged = False
         for i in range(m):
-            minDist = 100000.0
+            minDist = np.inf
             minIndex = -1
-
-            # 遍历所有的质心
-            # 第2步 找出最近的质心
             for j in range(k):
-                # 计算该样本到质心的欧式距离
-                distance = distEclud(centroids[j, :], dataSet[i, :])
-                if distance < minDist:
-                    minDist = distance
+                distJI = np.linalg.norm(
+                    np.array(centroids[j, :]) - np.array(dataSet[i, :]))
+                if distJI < minDist:
+                    minDist = distJI
                     minIndex = j
-            # 第 3 步：更新每一行样本所属的簇
             if clusterAssment[i, 0] != minIndex:
-                clusterChange = True
-                clusterAssment[i, :] = minIndex, minDist ** 2
-        # 第 4 步：更新质心
-        for j in range(k):
-            pointsInCluster = dataSet[np.nonzero(clusterAssment[:, 0].A == j)[0]]  # 获取簇类所有的点
-            centroids[j, :] = np.mean(pointsInCluster, axis=0)  # 对矩阵的行求均值
+                clusterChanged = True
+            clusterAssment[i, :] = minIndex, minDist ** 2
+            print(
+                "第%d次迭代后%d个质心的坐标:\n%s" %
+                (iterIndex, k, centroids))  # 第一次迭代的质心坐标就是初始的质心坐标
+            iterIndex += 1
+        for cent in range(k):
+            ptsInClust = dataSet[np.nonzero(clusterAssment[:, 0].A == cent)[
+                0]]  # get all the point in this cluster
+            centroids[cent, :] = np.mean(ptsInClust, axis=0)
+    iters = (iterIndex - 1) / dataSet.shape[0]
+    return centroids, clusterAssment, iters
 
-    print("Congratulations,cluster complete!")
-    return centroids, clusterAssment
 
-
-# 显示聚类结果
-def showCluster(dataSet, k, centroids, clusterAssment):
-    m, n = dataSet.shape
-    if n != 2:
-        print("数据不是二维的")
+def showCluster(dataSet, k, centroids, clusterAssment, iters):
+    '''
+    数据可视化,只能画二维的图（若是三维的坐标图则直接返回1）
+    '''
+    numSamples, dim = dataSet.shape
+    if dim != 2:
         return 1
 
-    mark = ['or', 'ob', 'og', 'ok', '^r', '+r', 'sr', 'dr', '<r', 'pr']
-    if k > len(mark):
-        print("k值太大了")
-        return 1
+    mark = ['or', 'ob', 'og', 'ok', 'oy', 'om', 'oc', '^r', '+r', 'sr', 'dr', '<r', 'pr']
 
-    # 绘制所有的样本
-    for i in range(m):
+    # draw all samples
+    for i in range(numSamples):
         markIndex = int(clusterAssment[i, 0])
         plt.plot(dataSet[i, 0], dataSet[i, 1], mark[markIndex])
 
-    mark = ['Dr', 'Db', 'Dg', 'Dk', '^b', '+b', 'sb', 'db', '<b', 'pb']
-    # 绘制质心
+    mark = ['Pr', 'Pb', 'Pg', 'Pk', 'Py', 'Pm', 'Pc', '^b', '+b', 'sb', 'db', '<b', 'pb']
+    # draw the centroids
     for i in range(k):
-        plt.plot(centroids[i, 0], centroids[i, 1], mark[i])
+        plt.plot(centroids[i, 0], centroids[i, 1], mark[i], markersize=12)
 
+    plt.title('Number of Iterations: %d' % (iters))
     plt.show()
 
 
-dataSet = loadDataSet("test.txt")
-k = 4
-centroids, clusterAssment = KMeans(dataSet, k)
+if __name__ == '__main__':
+    # 加载数据集
+    dataMat = np.mat(load_data_set('./testSet'))  # mat是numpy中的函数，将列表转化成矩阵
 
-showCluster(dataSet, k, centroids, clusterAssment)
+    k = 4  # 选定k值，也就是簇的个数（可以指定为其他数）
+    cent, clust, iters = kMeans(dataMat, k)
+
+    # 数据可视化处理
+    showCluster(dataMat, k, cent, clust, iters)
