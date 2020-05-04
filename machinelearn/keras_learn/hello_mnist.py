@@ -25,6 +25,8 @@ from keras.utils import plot_model
 # 导入keras的优化器
 from keras.optimizers import RMSprop
 
+model_path = 'F:/develop_code/python/machinelearn/docs/model/keras_model/mnist.h5'
+
 dataset_name = 'mnist.npz'
 data = mnist.load_data(dataset_name)
 (x_train, y_train), (x_test, y_test) = data
@@ -72,6 +74,6 @@ score = model.evaluate(x_test, y_test, verbose=0)
 print(score)
 
 # 保存训练好的模型
-model.save('mnist.h5')
+model.save(model_path)
 
 print('hello mnist')
