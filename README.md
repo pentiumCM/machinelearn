@@ -20,10 +20,10 @@
     + vehicle_plate_recognition：车牌识别算法
     + keras_learn：Keras框架学习模块
     + opencv_learn：opencv框架学习模块
-    + scikit_learn
-    + tensorflow_learn
+    + scikit_learn：sklearn框架学习模块
+    + tensorflow_learn：TensorFlow框架学习
     + utils：工具模块
         + loaddata_utils.py：加载数据集工具
-        + pca_utils.py：pca降温工具
+        + pca_utils.py：pca降维工具
         + plt_utils.py：matplotlib绘图工具
         + scaler_utils.py：数据标准化/归一化工具
