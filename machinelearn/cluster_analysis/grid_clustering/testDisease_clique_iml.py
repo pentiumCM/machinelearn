@@ -14,7 +14,6 @@ import os
 import sys
 import numpy as np
 import scipy.sparse.csgraph
-from sklearn import preprocessing
 from sklearn import metrics
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -25,12 +24,38 @@ import itertools
 
 # 在2D中生成4个聚类
 from sklearn.datasets import make_blobs
-from sklearn.preprocessing import StandardScaler
+
+from utils.loaddata_utils import load_csvdata
+from utils.scaler_utils import std_scaler_transdata
+
+import datetime
+
+now_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+print('程序开始时间：', now_time)
+
+# 1. 导入数据集
+datafile = u'F:\\develop_code\\python\\machinelearn\\docs\\dataset\\subForest.csv'
+testdisease_data = load_csvdata(datafile)
+
+# 2. 数据预处理
+data = np.array(testdisease_data, dtype=np.float16)
+
+# 行代表维数，因为下面有转置操作
+data = data[0:10, :]
+
+# 数据标准化
+data_std = std_scaler_transdata(data)
+
+data_std = data_std.T
 
 n_components = 4
-data, truth = make_blobs(n_samples=100, centers=n_components, random_state=42, n_features=2)
-data = preprocessing.MinMaxScaler().fit_transform(data)
-plt.scatter(data[:, 0], data[:, 1], s=50, c=truth)
+# data, truth = make_blobs(n_samples=100, centers=n_components, random_state=42, n_features=2)
+
+data = data_std
+
+# plt.scatter(data[:, 0], data[:, 1], s=50, c=truth)
+plt.scatter(data[:, 0], data[:, 1], s=50)
+
 plt.title(f"Example of a mixture of {n_components} distributions")
 plt.xlabel("Feature 1")
 plt.ylabel("Feature 2")
@@ -90,17 +115,17 @@ def neighbour(denseUnits1, denseUnits2):
 
 # 设置参数
 # 密度阈值
-thresholdPoints = 2
+thresholdPoints = 5
 # dense，
 # 每一维的网格数
-nbBins = 8
+nbBins = 4
 
 
 # 创建一dimensionals dense单元
 def createDenseUnitsAndGrid(data, thresholdPoints=thresholdPoints, nbBins=nbBins):
     """
     This method will return an array of lists, each list containing 1D dense units
-    In 1 D subspace, each list will contain only one element
+    In 1 D subspace, each list will contain only one element - 此方法将返回一个列表数组，每个列表包含一维密集单元。在一维子空间中，每个列表将仅包含一个元素
     """
     denseUnits1D = []
     grid = []  # this is used for rendering purposes
@@ -139,6 +164,7 @@ for g in grid[0]:
 for g in grid[1]:
     plt.axhline(y=g, c='red', linestyle='--')
     plt.ylabel('Feature 1')
+plt.show()
 
 
 # 识别要合并的dense单元
@@ -149,6 +175,7 @@ def denseBinsToClusters(candidates, plot=False, debug=False):
     This method will merge neighbouring units by projecting them onto a
     graph, where we can easily compute connected components
     """
+    # graph = np.identity(len(candidates), dtype=np.float16)
     graph = np.identity(len(candidates))
     for i in range(len(candidates)):
         for j in range(len(candidates)):
@@ -232,9 +259,19 @@ for g in grid[0]:
 for g in grid[1]:
     plt.axhline(y=g, c='red', linestyle='--')
     plt.ylabel('Feature 1')
+plt.show()
+
+now_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+print('程序结束时间：', now_time)
+
+print("pred：", pred)
 
 # 验证结果
 from sklearn.metrics.cluster import adjusted_rand_score
 
-score = adjusted_rand_score(truth, pred)
-print(score)
+# score = adjusted_rand_score(truth, pred)
+# print(score)
+
+# DBI的值最小是0，值越小，代表聚类效果越好。
+cluster_score_DBI = metrics.davies_bouldin_score(data_std, pred)
+print("cluster_score_DBI ：", cluster_score_DBI)

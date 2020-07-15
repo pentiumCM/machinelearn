@@ -46,13 +46,13 @@ class DenseUnit1D:
     def __init__(self, dimension, bin, minBin, maxBin, points):
         self.dimension = dimension  # dimension index
 
-        self.bin = bin  # bin number
-        self.minBin = minBin  # inferior bin limit
-        self.maxBin = maxBin  # superior bin limit
-        self.points = points  # observation indexes in input data
+        self.bin = bin  # bin number - 单元格编号
+        self.minBin = minBin  # inferior bin limit - 单元格下限
+        self.maxBin = maxBin  # superior bin limit - 单元格上限
+        self.points = points  # observation indexes in input data - 单元格密度
 
     def distance(self, du):
-        # Not in the same dimension, can't be neighbors
+        # Not in the same dimension, can't be neighbors - 不在同一个维度，不能成为邻居
         if self.dimension != du.dimension:
             return -1
         return abs(self.bin - du.bin)
@@ -74,7 +74,7 @@ class DenseUnit1D:
 
 def neighbour(denseUnits1, denseUnits2):
     """
-    Determines if 2 dense units are neighbouring
+    Determines if 2 dense units are neighbouring - 确定2个密集单元是否相邻
     """
     # We allow only 1 bin deviation in one subspace
     distance = 0
@@ -96,20 +96,20 @@ thresholdPoints = 2
 nbBins = 8
 
 
-# 创建一dimensionals dense单元
+# 创建 一 dimensionals dense单元
 def createDenseUnitsAndGrid(data, thresholdPoints=thresholdPoints, nbBins=nbBins):
     """
     This method will return an array of lists, each list containing 1D dense units
     In 1 D subspace, each list will contain only one element
     """
     denseUnits1D = []
-    grid = []  # this is used for rendering purposes
+    grid = []  # this is used for rendering purposes - 绘制网格
     for curDim in range(data.shape[1]):
         minDim = min(data[:, curDim])
         maxDim = max(data[:, curDim])
         binSize = (maxDim - minDim) / nbBins
         points = data[:, curDim]
-        g = []  # grid lines for current dimension
+        g = []  # grid lines for current dimension - 当前特征的网格线
         g.append(minDim)
         for i in range(nbBins):
             endBin = minDim + binSize
@@ -120,7 +120,7 @@ def createDenseUnitsAndGrid(data, thresholdPoints=thresholdPoints, nbBins=nbBins
                 endBin = maxDim
             else:
                 binPoints = np.where((points >= minDim) & (points < endBin))[0]
-            # Store only dense bins
+            # Store only dense bins - 仅存储密集的单元
             if len(binPoints) > thresholdPoints:
                 denseUnits1D.append([DenseUnit1D(curDim, i, minDim, endBin, binPoints)])
             minDim = endBin
@@ -139,6 +139,7 @@ for g in grid[0]:
 for g in grid[1]:
     plt.axhline(y=g, c='red', linestyle='--')
     plt.ylabel('Feature 1')
+plt.show()
 
 
 # 识别要合并的dense单元
@@ -163,7 +164,7 @@ def denseBinsToClusters(candidates, plot=False, debug=False):
     clusterAssignment = -1 * np.ones(data.shape[0])
     # For every cluster
     for i in range(nbConnectedComponents):
-        # Get dense units of the cluster
+        # Get dense units of the cluster - 获取集群的密集单元
         cluster_dense_units = candidates[np.where(components == i)[0]]
         if debug:
             for v in cluster_dense_units:
@@ -232,6 +233,10 @@ for g in grid[0]:
 for g in grid[1]:
     plt.axhline(y=g, c='red', linestyle='--')
     plt.ylabel('Feature 1')
+plt.show()
+
+
+print("聚类结果：",pred)
 
 # 验证结果
 from sklearn.metrics.cluster import adjusted_rand_score

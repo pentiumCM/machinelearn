@@ -9,9 +9,7 @@
 @desc	 : 测试病的层次聚类
 '''
 
-import pandas as pd
 import numpy as np
-from sklearn.cluster import AgglomerativeClustering
 
 from utils.scaler_utils import std_scaler_transdata
 from utils.pca_utils import pac_transfer_data
@@ -22,6 +20,11 @@ from pyclustering.cluster.clique import clique
 from pyclustering.cluster.clique import clique_visualizer
 
 from sklearn import metrics
+
+import datetime
+
+now_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+print('程序开始时间：', now_time)
 
 # 1. 导入数据集
 datafile = u'F:\\develop_code\\python\\machinelearn\\docs\\dataset\\subForest.csv'
@@ -34,9 +37,9 @@ map_data = load_exceldata(mapfile, '信息导入', index_col=[2, 3])
 map_data = np.array(map_data)
 
 # 2. 数据预处理
-data = np.array(testdisease_data)
+data = np.array(testdisease_data, dtype=np.float32)
 
-data = data[0:10, 0:5]
+data = data[0:10, 0:10]
 
 # 数据标准化
 data_M = std_scaler_transdata(data)
@@ -100,3 +103,6 @@ clique_visualizer.show_grid(cells, pca_data)
 clique_visualizer.show_clusters(pca_data, clusters, noise)
 
 print("聚类结束")
+
+now_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+print('程序结束时间：', now_time)

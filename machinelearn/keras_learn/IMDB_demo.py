@@ -42,17 +42,6 @@ x_test = vectorize(test_data)
 y_train = np.asarray(train_labels).astype('float32')
 y_test = np.asarray(test_labels).astype('float32')
 
-# 定义网络为 Sequential 顺序模型，它由多个网络层线性堆叠
-model = models.Sequential()
-model.add(layers.Dense(16, activation='relu', input_shape=(10000,)))
-# 中间层的神经元个数太多会造成过拟合
-model.add(layers.Dense(16, activation='relu'))
-model.add(layers.Dense(1, activation='sigmoid'))
-
-# 打印模型的详细信息
-print(model.summary())
-plot_model(model, to_file='imdb.png')
-
 batch_size = 128
 epochs = 10
 
@@ -64,6 +53,18 @@ partial_x_train = x_train[10000:]
 y_val = y_train[:10000]
 partial_y_train = y_train[10000:]
 
+# original Model
+# 定义网络为 Sequential 顺序模型，它由多个网络层线性堆叠
+model = models.Sequential()
+model.add(layers.Dense(16, activation='relu', input_shape=(10000,)))
+# 中间层的神经元个数太多会造成过拟合
+model.add(layers.Dense(16, activation='relu'))
+model.add(layers.Dense(1, activation='sigmoid'))
+
+# 打印模型的详细信息
+print(model.summary())
+plot_model(model, to_file='imdb.png')
+
 # 配置学习过程
 model.compile(loss='binary_crossentropy', optimizer=optimizers.RMSprop(lr=0.001), metrics=['accuracy'])
 
@@ -73,7 +74,6 @@ history = model.fit(partial_x_train, partial_y_train,
 
 print(history.history.keys())
 history_dict = history.history
-
 
 # 可视化损失
 loss = history_dict['loss']
@@ -100,4 +100,5 @@ plt.legend()
 plt.show()
 
 model.save(model_path)
+
 print("imdb")

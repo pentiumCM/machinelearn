@@ -22,4 +22,5 @@ def pac_transfer_data(data, n_components):
     pca = PCA(n_components=n_components)
     pca.fit(data)
     pca_res = pca.transform(data)
+    print("方差贡献率：", pca.explained_variance_ratio_)
     return pca_res

@@ -12,12 +12,12 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn import preprocessing
 from sklearn.cluster import AgglomerativeClustering
 from scipy.cluster.hierarchy import linkage, dendrogram
 
-from sklearn.decomposition import PCA
 from sklearn import metrics
+
+from utils.scaler_utils import std_scaler_transdata
 
 # plt.rcParams['font.sans-serif'] = ['SimHei']  # 显示中文标签
 
@@ -34,10 +34,7 @@ map_data = np.array(map_data)
 data = np.array(testdisease_data)
 
 # 数据标准化
-# 构建数据标准化模型
-scaler = preprocessing.StandardScaler().fit(data)
-# 用scaler转换训练集
-data_M = scaler.transform(data)
+data_M = std_scaler_transdata(data)
 
 data_M = data_M.T
 
@@ -89,7 +86,7 @@ plt.show()
 
 # 4. 模型训练
 cluster_num = 3
-ac = AgglomerativeClustering(n_clusters=cluster_num, linkage='average', affinity='euclidean')
+ac = AgglomerativeClustering(n_clusters=cluster_num, linkage='ward', affinity='euclidean')
 ac.fit(data_M)
 
 # 聚类
@@ -117,8 +114,8 @@ for i in range(cluster_num):
 
 # 检验聚类的性能
 # metrics.silhouette_score(X, labels[, …])
+# 轮廓系数取值在【-1,1】之间，值越大，聚类效果越好
 python_cluster_score = metrics.silhouette_score(data_M, label_list)
-
 print("python_cluster_score：", python_cluster_score)
 
 # ch分数越大越好

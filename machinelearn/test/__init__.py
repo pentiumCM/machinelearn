@@ -8,3 +8,5 @@
 @Time    : 2019/12/17 10:19
 @desc	 : 
 '''
+
+from test.config import data_path

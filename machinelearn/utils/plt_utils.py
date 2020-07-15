@@ -17,7 +17,7 @@ plt.rcParams['font.sans-serif'] = ['SimHei']  # 用来正常显示中文标签
 plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
 
 
-def plt_scatter2D(x, y, title, colors=[]):
+def plt_scatter2D(x, y, title=None, colors=[]):
     """
     绘制二维散点图
     :param x:
@@ -50,3 +50,7 @@ def plt_scatter3D(x, y, z, colors, title):
     ax1.scatter3D(x, y, z, cmap='Blues', c=colors)
     plt.title(title)
     plt.show()
+
+
+def plt_line_chart():
+    return
