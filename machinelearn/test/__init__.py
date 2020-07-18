@@ -9,4 +9,12 @@
 @desc	 : 
 '''
 
-from test.config import data_path
+import time
+
+result = time.time()
+
+print('result：', result)
+
+year = result / (365 * 24 * 60 * 60) + 1970
+
+print("year：", year)

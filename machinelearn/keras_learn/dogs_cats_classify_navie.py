@@ -6,7 +6,7 @@
 @Software: PyCharm
 @File    : dogs_cats_classify_navie.py
 @Time    : 2020/6/8 20:37
-@desc	 : 猫狗分类分类器
+@desc	 : 猫狗分类 - 分类器
 '''
 
 import os, shutil
