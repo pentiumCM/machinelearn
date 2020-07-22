@@ -125,9 +125,9 @@ def build_attention_model(input):
 
     x = GlobalAveragePooling1D()(input)
     x = Dense(int(input_channels / 4))(x)
-    x = Activation('softmax')(x)
+    x = Activation('relu')(x)
     x = Dense(input_channels)(x)
-    x = Activation('softmax')(x)
+    x = Activation('sigmoid')(x)
     x = Reshape((1, 1, input_channels))(x)
     x = Multiply()([input, x])
     return x
