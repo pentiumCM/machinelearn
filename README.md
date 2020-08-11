@@ -5,6 +5,7 @@
     + model：训练好的模型文件
     
 + machinelearn：源代码
+    + application_scene：应用场景模块
     + basic：基础模块
     + data_preprocess：数据预处理
         + pca_demo.py：主成分分析（降维）
@@ -16,8 +17,6 @@
         + hierarchical_clustering：层次聚类
         + partition_clustering：划分聚类
     + neural_network：神经网络算法
-    + face_recognition：基于Tensorflow,opencv,dlib,cnn的人脸识别算法
-    + vehicle_plate_recognition：车牌识别算法
     + keras_learn：Keras框架学习模块
     + opencv_learn：opencv框架学习模块
     + scikit_learn：sklearn框架学习模块

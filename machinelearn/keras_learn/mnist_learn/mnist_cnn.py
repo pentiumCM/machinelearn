@@ -65,7 +65,7 @@ model = Sequential()
 # input_shape与输入层的大小提供模型
 model.add(Conv2D(filters=32,
                  kernel_size=(5, 5),
-                 padding='same',
+                 padding='valid',
                  activation='relu',
                  input_shape=(28, 28, 1)))
 
@@ -73,7 +73,7 @@ model.add(MaxPooling2D(pool_size=(2, 2)))
 
 model.add(Conv2D(filters=64,
                  kernel_size=(3, 3),
-                 padding='same',
+                 padding='valid',
                  activation='relu'))
 
 model.add(MaxPooling2D(pool_size=(2, 2)))
@@ -93,7 +93,7 @@ model.compile(loss=keras.losses.categorical_crossentropy,
               metrics=['accuracy'])
 
 # 可视化模型
-plot_model(model, 'mnist_cnn.png')
+plot_model(model, 'mnist_cnn.png', show_shapes=True)
 print(model.summary())
 
 # 模型训练
