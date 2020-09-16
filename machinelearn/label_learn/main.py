@@ -4,7 +4,7 @@
 @Author  : pentiumCM
 @Email   : 842679178@qq.com
 @Software: PyCharm
-@File    : main.py
+@File    : feature_extraction_VGG16.py
 @Time    : 2020/8/7 16:40
 @desc	 : 程序主入口
 '''

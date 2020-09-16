@@ -6,8 +6,7 @@
 @Software: PyCharm
 @File    : __init__.py.py
 @Time    : 2020/6/8 14:57
-@desc	 : 特征提取 - 从 VGG16 预训练模型中提取特征
+@desc	 :
 '''
 
 
-import matplotlib.pyplot as plt

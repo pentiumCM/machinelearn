@@ -29,11 +29,11 @@ import matplotlib.pyplot as plt
 # 导入keras的优化器
 from keras.optimizers import RMSprop
 
-model_path = 'F:/develop_code/python/machinelearn/docs/model/keras_model/mnist.h5'
+model_path = 'F:/develop_code/python/machinelearn/docs/model/keras_model/mnist_test.h5'
 
-path = 'F:/develop_code/python/machinelearn/docs/dataset/mnist.npz'
+path = 'F:/develop_code/python/machinelearn/docs/dataset/mnist_test.npz'
 
-# data = mnist.load_data('mnist.npz')
+# data = mnist_test.load_data('mnist_test.npz')
 
 f = np.load(path)
 

@@ -4,7 +4,7 @@
 @Author  : pentiumCM
 @Email   : 842679178@qq.com
 @Software: PyCharm
-@File    : main.py
+@File    : feature_extraction_VGG16.py
 @Time    : 2019/12/19 14:33
 @desc	 : sklearn主函数
 '''

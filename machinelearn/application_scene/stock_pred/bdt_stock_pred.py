@@ -40,7 +40,7 @@ from application_scene.stock_pred.stock_data import prepare_stock_data
 # 股票数据源
 data_source = 'yahoo'
 # 股票名称，规则见同级 md 说明文件
-stock_name = '600667.SS'
+stock_name = '000001.SS'
 # 数据采集时段
 start = datetime.datetime(2000, 1, 1)
 end = datetime.today()

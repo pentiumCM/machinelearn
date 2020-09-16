@@ -9,6 +9,8 @@
 @desc	 : 利用卷积神经网络来实现手写体数字识别
 '''
 
+import os
+
 import numpy as np
 import matplotlib.pyplot as  plt
 
@@ -29,11 +31,16 @@ from keras.utils import plot_model
 # 导入keras的优化器
 from keras.optimizers import RMSprop
 
-model_path = 'F:/develop_code/python/machinelearn/docs/model/keras_model/mnist.h5'
+# 参数设置
+# 模型保存的路径
+model_path = 'F:/develop_code/python/machinelearn/docs/model/keras_model/mnist_cnn.h5'
+# 数据集的数据
+path = 'F:/develop_code/python/machinelearn/docs/dataset/mnist_test.npz'
 
-path = 'F:/develop_code/python/machinelearn/docs/dataset/mnist.npz'
-
-# data = mnist.load_data('mnist.npz')
+# 训练的参数
+epochs = 30
+batch_size = 128
+num_category = 10
 
 f = np.load(path)
 
@@ -42,7 +49,16 @@ f = np.load(path)
 x_train, y_train = f['x_train'], f['y_train']
 x_test, y_test = f['x_test'], f['y_test']
 
-# (x_train, y_train), (x_test, y_test) = data
+# 使用matplotlib 库将数据可视化
+fig = plt.figure()
+for i in range(9):
+    plt.subplot(3, 3, i + 1)
+    plt.tight_layout()
+    plt.imshow(x_train[i], cmap='gray', interpolation='none')
+    plt.title("Digit: {}".format(y_train[i]))
+    plt.xticks([])
+    plt.yticks([])
+plt.show()
 
 # reshape(samples, features)
 x_train = x_train.reshape(60000, 28, 28, 1)
@@ -55,7 +71,6 @@ x_train /= 255
 x_test /= 255
 
 # 类别进行编码
-num_category = 10
 # convert class vectors to binary class matrices
 y_train = keras.utils.to_categorical(y_train, num_category)
 y_test = keras.utils.to_categorical(y_test, num_category)
@@ -98,18 +113,22 @@ print(model.summary())
 
 # 模型训练
 model.fit(x_train, y_train,
-          batch_size=128,
-          epochs=10,
+          batch_size=batch_size,
+          epochs=epochs,
           verbose=1,
           validation_data=(x_test, y_test),
           callbacks=[history])
+
+# 保存模型文件
+if os.path.exists(model_path) == False:
+    model.save(model_path)
 
 # 模型训练好后需要评估其性能：
 score = model.evaluate(x_test, y_test, verbose=0)
 print('Test loss:', score[0])  # Test loss: 0.0296396646054
 print('Test accuracy:', score[1])  # Test accuracy: 0.9904
 
-plt.plot(range(1, 11), history.acc)
-plt.xlabel('Epochs')
-plt.ylabel('Accuracy')
-plt.show()
+# plt.plot(range(1, epochs), history.acc)
+# plt.xlabel('Epochs')
+# plt.ylabel('Accuracy')
+# plt.show()

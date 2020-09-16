@@ -4,7 +4,7 @@
 @Author  : pentiumCM
 @Email   : 842679178@qq.com
 @Software: PyCharm
-@File    : test.py
+@File    : build_model.py
 @Time    : 2019/12/24 10:50
 @desc	 : 聚类分析 - K-means
             参考博客：https://blog.csdn.net/weixin_40683253/article/details/81288900

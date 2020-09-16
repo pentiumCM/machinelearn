@@ -25,7 +25,7 @@ from keras import backend as k
 
 # 准备数据
 # 加载数据集
-path = 'F:/develop_code/python/machinelearn/docs/dataset/mnist.npz'
+path = 'F:/develop_code/python/machinelearn/docs/dataset/mnist_test.npz'
 mode_path = 'F:/develop_code/python/machinelearn/docs/model/'
 f = np.load(path)
 

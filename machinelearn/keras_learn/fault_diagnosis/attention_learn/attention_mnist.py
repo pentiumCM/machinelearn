@@ -9,7 +9,7 @@
 @desc	 : 
 '''
 
-# mnist attention
+# mnist_test attention
 import numpy as np
 
 np.random.seed(1337)
@@ -26,7 +26,7 @@ INPUT_DIM = 28
 lstm_units = 64
 
 # data pre-processing
-path = 'F:/develop_code/python/machinelearn/docs/dataset/mnist.npz'
+path = 'F:/develop_code/python/machinelearn/docs/dataset/mnist_test.npz'
 f = np.load(path)
 # X_train表示训练数据集，总共60,000张28x28大小的手写体图像，y_train表示训练图像对应的标签。
 # 同理，X_test表示测试数据集，总共10,000张28x28大小的手写体图像，y_test表示测试图像对应的标签
