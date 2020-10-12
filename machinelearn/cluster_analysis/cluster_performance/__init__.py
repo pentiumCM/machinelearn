@@ -6,7 +6,7 @@
 @Software: PyCharm
 @File    : __init__.py.py
 @Time    : 2020/5/15 14:12
-@desc	 : 
+@desc	 : 聚类性能评估
 '''
 
 import numpy as np

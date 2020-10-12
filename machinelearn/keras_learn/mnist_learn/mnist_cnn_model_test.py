@@ -6,7 +6,7 @@
 @Software: PyCharm
 @File    : mnist_cnn_model_test.py
 @Time    : 2020/8/19 15:27
-@desc	 : mnist_test-cnn 模型预测
+@desc	 : mnist_test-cnn 模型应用 - 使用 mnist 模型进行手写体预测
 '''
 
 import numpy as np
@@ -17,7 +17,9 @@ import matplotlib.pyplot as plt
 
 from utils.io_utils import get_subfiles
 
+# 待预测图片路径
 img_dir = 'F:/develop_code/python/machinelearn/docs/dataset/test/mnist_test/'
+# 训练好的模型路径
 model_path = 'F:/develop_code/python/machinelearn/docs/model/keras_model/mnist_cnn.h5'
 
 test_files = get_subfiles(img_dir)

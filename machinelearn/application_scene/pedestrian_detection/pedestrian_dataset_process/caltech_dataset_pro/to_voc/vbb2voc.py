@@ -1,4 +1,14 @@
-# -*- coding:utf-8 -*-
+#!/usr/bin/env python
+# encoding: utf-8
+'''
+@Author  : pentiumCM
+@Email   : 842679178@qq.com
+@Software: PyCharm
+@File    : seq2voc.py
+@Time    : 2020/9/7 21:44
+@desc	 : Caltech数据集 seq 类型文件数据集处理
+'''
+
 import os, glob
 import cv2
 from scipy.io import loadmat
@@ -152,8 +162,8 @@ def vbb2voc():
     vbb标注文件 转 VOC标注 的 xml 入口函数
     :return:
     """
-    vbb_inputdir = "F:/experiment/Caltech/annotations/"
-    vbb_outputdir = "F:/experiment/Caltech/VOC_process/Annotations/"
+    vbb_inputdir = "F:/experiment/Caltech/annotations_org/"
+    vbb_outputdir = "F:/experiment/Caltech/VOC_process/Annotations_org/"
     parse_anno_file(vbb_inputdir, vbb_outputdir)
 
 

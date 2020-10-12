@@ -49,7 +49,7 @@ end = datetime.today()
 stock_df = prepare_stock_data(stock_name, data_source, start, end)
 pd.set_option('display.max_columns', None)  # 显示所有列
 
-print(stock_df.tail())
+print('股票数据', stock_df.tail())
 
 # 绘制stock历史收盘价trend图
 plt.figure(figsize=(16, 8))

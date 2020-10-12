@@ -20,8 +20,8 @@ from sklearn import metrics
 from utils.plt_utils import plt_scatter2D
 
 # 生成一组随机数据
-X1, y1 = datasets.make_circles(n_samples=5000, factor=.6, noise=.05)
-X2, y2 = datasets.make_blobs(n_samples=1000, n_features=2, centers=[[1.2, 1.2]], cluster_std=[[.1]], random_state=9)
+X1, y1 = datasets.make_circles(n_samples=200, factor=.6, noise=.05)
+X2, y2 = datasets.make_blobs(n_samples=100, n_features=2, centers=[[1.2, 1.2]], cluster_std=[[.1]], random_state=9)
 
 X = np.concatenate((X1, X2))
 plt_scatter2D(x=X[:, 0], y=X[:, 1], title="原始数据")
@@ -39,8 +39,16 @@ y_pred_ac = ac.fit_predict(X)
 plt_scatter2D(x=X[:, 0], y=X[:, 1], colors=y_pred_ac, title="层次聚类")
 
 # 3. 密度聚类
-y_pred_db = DBSCAN(eps=0.1, min_samples=10).fit_predict(X)
+db = DBSCAN(eps=0.05, min_samples=5).fit(X)
+y_pred_db = db.labels_
+labels = db.labels_
+clusters = n_clusters_ = len(set(y_pred_db)) - (1 if -1 in y_pred_db else 0)
+print('密度聚类簇个数：', clusters)
+n_noise_ = list(labels).count(-1)
+print("噪声点数{b}".format(b=n_noise_))
 plt_scatter2D(x=X[:, 0], y=X[:, 1], colors=y_pred_db, title="密度聚类")
+
+
 
 # 性能检验
 cluster_score_ch_km = metrics.calinski_harabasz_score(X, y_pred_km)

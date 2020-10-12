@@ -10,6 +10,7 @@
 '''
 
 from lxml import etree, objectify
+import os
 
 
 def visualize_bbox(xml_file, img_file):
@@ -32,9 +33,17 @@ def visualize_bbox(xml_file, img_file):
 
 
 if __name__ == "__main__":
-    # main()
-
     # 可视化标注矩形框
-    xml_file = "F:/experiment/Caltech/VOC_process/Annotations/080000.xml"
-    img_file = "F:/experiment/Caltech/VOC_process/JPEGImages/080000.jpg"
-    visualize_bbox(xml_file, img_file)
+    img_file_dir = r"F:\experiment\data\VOC\VOCtrainval_06-Nov-2007\VOCdevkit\VOC2007\JPEGImages/"
+    annotations_file_dir = r"F:\experiment\data\VOC\VOCtrainval_06-Nov-2007\VOCdevkit\VOC2007\Annotations/"
+
+    for parent, dirnames, filenames in os.walk(annotations_file_dir):
+        for filename in filenames:
+            img_file_name = filename.split('.')[0]
+
+            img_file = os.path.join(img_file_dir, img_file_name + ".jpg").replace('\\', '/')
+            xml_file = os.path.join(annotations_file_dir, filename).replace('\\', '/')
+            visualize_bbox(xml_file, img_file)
+
+    # img_file = r"F:/experiment/data/VOC/VOCtrainval_06-Nov-2007/VOCdevkit/VOC2007/JPEGImages/000005.jpg"
+    # xml_file = r"F:/experiment/data/VOC/VOCtrainval_06-Nov-2007/VOCdevkit/VOC2007/Annotations/000005.xml"
