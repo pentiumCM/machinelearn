@@ -22,7 +22,6 @@ from sklearn.naive_bayes import MultinomialNB
 
 from sklearn.metrics import classification_report
 
-
 # 1.数据获取
 news = fetch_20newsgroups(subset='all')
 print(len(news.data))  # 输出数据的条数：18846
@@ -39,9 +38,9 @@ X_train = vec.fit_transform(X_train)
 X_test = vec.transform(X_test)
 
 # 3.使用朴素贝叶斯进行训练
-mnb = MultinomialNB()   # 使用默认配置初始化朴素贝叶斯
-mnb.fit(X_train, y_train)    # 利用训练数据对模型参数进行估计
-y_predict = mnb.predict(X_test)     # 对参数进行预测
+mnb = MultinomialNB()  # 使用默认配置初始化朴素贝叶斯
+mnb.fit(X_train, y_train)  # 利用训练数据对模型参数进行估计
+y_predict = mnb.predict(X_test)  # 对参数进行预测
 
 # 4.获取结果报告
 print('The Accuracy of Naive Bayes Classifier is:', mnb.score(X_test, y_test))

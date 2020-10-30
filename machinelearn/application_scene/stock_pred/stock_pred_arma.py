@@ -4,9 +4,9 @@
 @Author  : pentiumCM
 @Email   : 842679178@qq.com
 @Software: PyCharm
-@File    : arma_stock_pred.py
+@File    : stock_pred_arma.py
 @Time    : 2020/8/4 22:07
-@desc	 : ARMA - 实现股票预测
+@desc	 : ARMA - 实现股票预测 - 机器学习的方式
 '''
 
 from pandas import datetime
@@ -27,7 +27,7 @@ pro = ts.pro_api('6ecc6daaf139b983f0f83b196e21c34df880f9336ed6be286a19f5ea')  # 
 start = datetime.datetime(2000, 1, 1)
 end = datetime.today()
 
-data = pro.daily(ts_code='000001.SZ',start_date='20180701', end_date='20200805')
+data = pro.daily(ts_code='000001.SZ', start_date='20180701', end_date='20200805')
 
 data.index = pd.to_datetime(data.index)
 data = data.sort_index()
