@@ -32,6 +32,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from pandas import datetime
 
+# 可视化神经网络
+from keras.utils import plot_model
+
 from application_scene.stock_pred.stock_data import prepare_stock_data
 
 
@@ -108,11 +111,14 @@ def predict_stock(stock_name, start_time, end_time, data_source='yahoo'):
     # input_dim：输入单个样本特征值的维度
     # input_length：输入的时间点长度
     model = Sequential()
-    model.add(LSTM(units=100, return_sequences=True, input_dim=x_train.shape[-1], input_length=x_train.shape[1]))
+    # model.add(LSTM(units=100, return_sequences=True, input_dim=x_train.shape[-1], input_length=x_train.shape[1]))
+    model.add(LSTM(units=100, return_sequences=True, input_shape=(x_train.shape[1], x_train.shape[2])))
     model.add(LSTM(units=50))
     model.add(Dense(1))
     model.compile(loss='mean_squared_error', optimizer='adam')
     model.fit(x_train, y_train, epochs=epochs, batch_size=batch_size, verbose=2)
+
+    plot_model(model, to_file='stock_pred_pandas.png', show_shapes=True)
 
     # 预测stock价格
     closing_price = model.predict(x_valid)
@@ -149,4 +155,4 @@ if __name__ == '__main__':
     start_time = datetime.datetime(2000, 1, 1)
     end_time = datetime.today()
 
-    predict_stock(stock_name)
+    predict_stock(stock_name, start_time, end_time)

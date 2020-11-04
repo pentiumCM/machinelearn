@@ -1,6 +1,10 @@
-from keras_learn.fault_diagnosis import bearingPro
+'''
+在初稿的基础上添加上LSTM进行进一步的特征抽取,
+效果提高了
+'''
+from application_scene.fault_diagnosis import bearingPro
 import numpy as np
-from keras.layers import Conv1D, Dense, Dropout, BatchNormalization, MaxPooling1D, Activation, Flatten, LSTM, GRU
+from keras.layers import Conv1D, Dense, BatchNormalization, MaxPooling1D, Activation, Flatten, LSTM
 from keras.models import Sequential
 from keras.regularizers import l2  # 正则化器允许在优化过程中对层的参数或层的激活情况进行惩罚
 from livelossplot import PlotLossesKeras  # 绘制损失曲线
@@ -8,7 +12,7 @@ from keras.utils.vis_utils import plot_model  # 可以直接将搭建的神经�
 
 # 训练参数
 batch_size = 128  # 在训练集中选择一组样本用来更新权值，一个batch包含的样本数一般为2的幂次方，常用64，128，256，网络较小的时候选择256，较大时选择64
-epochs = 10
+epochs = 50
 num_classes = 10  # 共有十种分类
 length = 1024  # 每个样本的长度
 BatchNorm = True  # 是否批量归一化
@@ -16,7 +20,7 @@ number = 1000  # 每类样本的数量
 normal = True  # 是否标准化
 rate = [0.7, 0.2, 0.1]  # 测试集验证集划分比例
 
-path = r'F:\develop_code\python\machinelearn\machinelearn\keras_learn\fault_diagnosis\data'
+path = r'F:\develop_code\py_code\today\data\bearing\0hp\0.007'
 train_x, train_y, valid_x, valid_y, test_x, test_y = bearingPro.prepro(d_path=path, length=length,
                                                                        number=number,
                                                                        normal=normal,
@@ -69,8 +73,10 @@ model = addLayers(filters=64, kernerl_size=3, strides=1, conv_padding='same',
 # 第四层卷积
 model = addLayers(filters=64, kernerl_size=3, strides=1, conv_padding='valid',
                   pool_padding='valid', pool_size=2, BatchNormal=BatchNorm)
+# 添加LSTM
+model.add(LSTM(32, return_sequences=True))
+
 # 从卷积到全连接需要展平，Flatten()常用于卷积层与全连接层的过渡
-# model.add(GRU(32, return_sequences=True))
 model.add(Flatten())
 
 # 添加全连接层
@@ -83,20 +89,20 @@ model.add(Dense(units=num_classes, activation='softmax', kernel_regularizer=l2(1
 model.compile(optimizer='Adam', loss='categorical_crossentropy',
               metrics=['accuracy'])
 
-plot_model(model=model, to_file='CNN_GRU.png', show_shapes=True)
-
 # 开始模型训练
-model.fit(x=x_train, y=train_y, batch_size=batch_size, epochs=epochs,
-          verbose=1, validation_data=(x_valid, valid_y), shuffle=True, callbacks=[PlotLossesKeras()])
+# model.fit(x=x_train, y=train_y, batch_size=batch_size, epochs=epochs,verbose=1, validation_data=(x_valid, valid_y), shuffle=True, callbacks=[PlotLossesKeras()])
+model.fit(x=x_train, y=train_y, batch_size=batch_size, epochs=epochs, verbose=1, validation_split=0.3, shuffle=True,
+          callbacks=[PlotLossesKeras()])
 
 # 评估模型
 score = model.evaluate(x=x_test, y=test_y, verbose=0)
 print("Loss on test set：", score[0])
 print("Accuracy on test set:", score[1])
+plot_model(model=model, to_file='model/1DLSTM.png', show_shapes=True)
 
 # 保存模型
-# model.save(r"F:\develop_code\py_code\today\OPT1\model_opt1\CNNmain_opt1.h5")
-# print("保存成功")
+model.save(r"model/1DLSTM.h5")
+print("保存成功")
 
 # predict = model_opt1.predict_classes(x_test)
 # print(predict)

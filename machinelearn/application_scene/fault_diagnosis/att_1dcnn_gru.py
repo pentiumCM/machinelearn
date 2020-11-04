@@ -9,11 +9,10 @@
 @desc	 :
 '''
 
-from keras_learn.fault_diagnosis import bearingPro
+from application_scene.fault_diagnosis import bearingPro
 import numpy as np
-from keras.layers import Input, Conv1D, Dense, Dropout, BatchNormalization, MaxPooling1D, Activation, Flatten, LSTM, \
-    GRU, GlobalAveragePooling1D, Reshape, Multiply
-from keras.models import Sequential, Model
+from keras.layers import Input, Conv1D, Dense, Dropout, BatchNormalization, MaxPooling1D, Activation, Flatten, GRU, GlobalAveragePooling1D, Reshape, Multiply
+from keras.models import Model
 from keras.regularizers import l2  # 正则化器允许在优化过程中对层的参数或层的激活情况进行惩罚
 from livelossplot import PlotLossesKeras  # 绘制损失曲线
 from keras.utils.vis_utils import plot_model  # 可以直接将搭建的神经网络用流程图表示出来

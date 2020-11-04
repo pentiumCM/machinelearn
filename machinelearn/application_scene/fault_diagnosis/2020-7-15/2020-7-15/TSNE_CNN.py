@@ -1,18 +1,14 @@
 # 特征可视化过程
 # 使用TSNE工具绘制迭代过程中CNN提取的特征数据分布情况
-import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
 
 matplotlib.use("TKAgg")
 from sklearn.manifold import TSNE
-from keras_learn.fault_diagnosis import bearingPro
+from application_scene.fault_diagnosis import bearingPro
 from sklearn.metrics import silhouette_score
 
 import numpy as np
-from keras.utils import to_categorical
-
-import tensorflow as tf
 
 length = 1024  # 每个样本的长度
 number = 1000  # 每类样本的数量

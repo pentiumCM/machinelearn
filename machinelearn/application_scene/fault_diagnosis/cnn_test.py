@@ -11,7 +11,7 @@
 
 import numpy as np
 
-import keras_learn.fault_diagnosis.bearingPro as bearingPro
+import application_scene.fault_diagnosis.bearingPro as bearingPro
 
 from keras.models import load_model
 

@@ -38,8 +38,15 @@ def train_classification(dataset_path, usercols, model, model_type):
     filePath = dataset_path
     df = pd.read_csv(filepath_or_buffer=filePath, usecols=usercols)
 
+    # 正负样本均衡操作
+    pos_df = df[df["label"].isin([1])]
+    neg_df = df[df["label"].isin([0])]
+    ratio_pos2neg = pos_df.shape[0] / neg_df.shape[0]
+    neg_df = neg_df.sample(frac=ratio_pos2neg)
+    samples_df = pd.concat([pos_df, neg_df], axis=0)
+
     # 2. 数据标准化处理
-    dataset = np.array(df)
+    dataset = np.array(samples_df)
 
     # 标签一般在最后一列，所以找到最后一列的索引进行划分 x,y
     columns_end_index = len(usercols) - 1
@@ -47,6 +54,11 @@ def train_classification(dataset_path, usercols, model, model_type):
     y = dataset[0:, columns_end_index]
     scalar = StandardScaler().fit(x)
     x = scalar.transform(x)
+
+    samples = y.shape[0]
+    pos = np.sum(y)
+
+    neg = samples - pos
 
     # 3. 构建数据集，训练集-测试集：7/3
     x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_state=0)
@@ -75,14 +87,14 @@ def train_classification(dataset_path, usercols, model, model_type):
 
 if __name__ == "__main__":
     # 指定数据集和待训练的特征列
-    dataset_path = 'F:/develop_code/python/machinelearn/machinelearn/scikit_learn/Classification/dataset/sample_x_y_w_h_gray.csv'
+    dataset_path = 'F:/develop_code/python/machinelearn/machinelearn/scikit_learn/classification/dataset/sample_x_y_w_h_gray.csv'
     usercols = [1, 2, 3, 4, 5, 6]
 
     # 选取预训练的模型
     # clf = svm.SVC()
-    # clf = GaussianNB()
-    clf = AdaBoostClassifier(n_estimators=100)
+    clf = GaussianNB()
+    # clf = AdaBoostClassifier(n_estimators=100)
 
-    clf_type = 'adaboost_f5'
+    clf_type = 'gnb_f5'
 
     train_classification(dataset_path, usercols, clf, clf_type)

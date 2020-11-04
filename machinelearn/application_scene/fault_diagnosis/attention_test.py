@@ -10,14 +10,11 @@
 '''
 
 # 1、导入相关库文件
-from keras_learn.fault_diagnosis.attention_utils import get_activations, get_data
+from application_scene.fault_diagnosis import get_activations, get_data
 
 import numpy as np
 
 np.random.seed(1337)  # for reproducibility
-from keras.models import *
-from keras.layers import Input, Dense, merge
-import tensorflow as tf
 
 # 2.定义网络
 import matplotlib.pyplot as plt
