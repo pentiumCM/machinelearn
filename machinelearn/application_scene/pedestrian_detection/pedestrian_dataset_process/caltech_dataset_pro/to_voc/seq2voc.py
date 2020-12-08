@@ -6,7 +6,7 @@
 @Software: PyCharm
 @File    : seq2voc.py
 @Time    : 2020/9/7 21:44
-@desc	 : Caltech数据集 seq 类型文件数据集处理
+@desc	 : Caltech数据集 seq 类型文件数据集处理：将.seq文件解析为图片
 '''
 
 # Deal with .seq format for video sequence
@@ -67,7 +67,7 @@ def open_save(file, savepath):
 
 if __name__ == "__main__":
     rootdir = "F:/experiment/Caltech/data"
-    saveroot = "F:/experiment/Caltech/VOC_process/JPEGImages"
+    saveroot = "F:/experiment/Caltech/VOC_process/JPEGImages_test"
 
     # walk in the rootdir, take down the .seq filename and filepath
     for parent, dirnames, filenames in os.walk(rootdir):

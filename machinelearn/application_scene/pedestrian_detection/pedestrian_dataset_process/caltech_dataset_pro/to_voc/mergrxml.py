@@ -6,7 +6,7 @@
 @Software: PyCharm
 @File    : mergrxml.py
 @Time    : 2020/9/16 16:34
-@desc	 : 将所有的xml文件 以及 JPEG文件分别放到两个统一的文件夹里
+@desc	 : 将所有的 xml 文件分别放到两个统一的文件夹里
 '''
 
 # -*- coding:utf-8 -*-

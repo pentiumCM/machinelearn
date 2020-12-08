@@ -4,7 +4,13 @@
 @Author  : pentiumCM
 @Email   : 842679178@qq.com
 @Software: PyCharm
-@File    : __init__.py.py
-@Time    : 2020/4/29 21:11
-@desc	 : 项目的工具模块
+@File    : main.py
+@Time    : 2020/11/25 16:22
+@desc	 : 
 '''
+
+import torch
+
+x = torch.rand(5, 3)
+
+print(x)

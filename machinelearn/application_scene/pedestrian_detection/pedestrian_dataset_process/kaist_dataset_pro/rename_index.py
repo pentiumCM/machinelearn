@@ -6,13 +6,14 @@
 @Software: PyCharm
 @File    : rename_index.py
 @Time    : 2020/9/16 17:20
-@desc	 : 重命名图片和XML文件
+@desc	 : 重命名图片和XML文件，
+            重命名规则，根据已有的标注文件来匹配图片，命名以6位整数
 '''
 
 import os
 
-xmlpath = 'F:/experiment/Caltech/VOC_process/Annotations'
-imgpath = 'F:/experiment/Caltech/VOC_process/JPEGImages'
+xmlpath = 'F:/experiment/data/KAIST/data_proc/annotations-xml'
+imgpath = 'F:/experiment/data/KAIST/data_proc/JPEGImages1'
 
 index = 0
 count = 0

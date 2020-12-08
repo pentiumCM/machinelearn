@@ -4,7 +4,7 @@
 @Author  : pentiumCM
 @Email   : 842679178@qq.com
 @Software: PyCharm
-@File    : mergeimg.py
+@File    : merge_img_label.py
 @Time    : 2020/9/16 16:21
 @desc	 : JPEG文件分别放到两个统一的文件夹里
 '''

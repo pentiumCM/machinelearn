@@ -6,5 +6,5 @@
 @Software: PyCharm
 @File    : __init__.py.py
 @Time    : 2020/11/1 17:00
-@desc	 : 
+@desc	 : pytorch 语法学习模块
 '''

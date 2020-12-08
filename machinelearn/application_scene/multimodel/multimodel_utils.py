@@ -82,7 +82,4 @@ if __name__ == "__main__":
     model_merge = merge_model(model_1, model_2)
     model_merge.summary()
 
-    for layer in model_merge.layers:
-        layer.trainable = False  # 原来的不训练,冻结网络层
-
     print("hello")

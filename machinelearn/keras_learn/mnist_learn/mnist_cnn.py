@@ -35,7 +35,7 @@ from keras.optimizers import RMSprop
 # 模型保存的路径
 model_path = 'F:/develop_code/python/machinelearn/docs/model/keras_model/mnist_cnn.h5'
 # 数据集的数据
-path = 'F:/develop_code/python/machinelearn/docs/dataset/mnist_test.npz'
+path = 'F:/develop_code/python/machinelearn/docs/dataset/mnist.npz'
 
 # 训练的参数
 epochs = 30
