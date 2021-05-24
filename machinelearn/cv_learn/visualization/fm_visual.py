@@ -12,6 +12,7 @@
                 2， 建立模型
                 3， 提取特征层
                 4， 进行可视化
+                参考：https://blog.csdn.net/jacke121/article/details/85422244
 '''
 
 import numpy as np
@@ -98,14 +99,14 @@ class FeatureVisualization():
         feature = np.round(feature * 255)
         print(feature[0])
 
-        cv2.imwrite('cnn_{i}_img.jpg'.format(i=cnnIndex), feature)
+        cv2.imwrite('img/cnn_{i}_img.jpg'.format(i=cnnIndex), feature)
 
 
 if __name__ == '__main__':
     # get class
     for cnnIndex in range(0, 30):
         print("第几层：", cnnIndex)
-        myClass = FeatureVisualization('set06_V003_I00983_visible.jpg', cnnIndex)
+        myClass = FeatureVisualization('aaa_lwir.png', cnnIndex)
         print(myClass.pretrained_model)
 
         fp_img = myClass.save_feature_to_img()

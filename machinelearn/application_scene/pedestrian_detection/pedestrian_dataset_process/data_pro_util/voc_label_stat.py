@@ -19,12 +19,16 @@ def voc_label_statistics(annotation_path):
     :param annotation_path: voc数据集的标签文件夹
     :return: [class1,class2.....]
     '''
-
+    count = 0
     annotation_names = [os.path.join(annotation_path, i) for i in os.listdir(annotation_path)]
-
     labels = list()
     for names in annotation_names:
+        names_arr = names.split('.')
+        file_type = names_arr[-1]
+        if file_type != 'xml':
+            continue
 
+        count = count + 1
         print('process：', names)
         xmlfilepath = names
         domobj = xmldom.parse(xmlfilepath)
@@ -36,11 +40,13 @@ def voc_label_statistics(annotation_path):
             label = s.getElementsByTagName("name")[0].firstChild.data
             if label not in labels:
                 labels.append(label)
+
+    print('文件标注个数：', count)
     return labels
 
 
 if __name__ == '__main__':
-    annotation_path = "F:/experiment/data/KAIST/annotations/annotations-xml"
+    annotation_path = "F:/project/jit/MrZ/examtestmis/AI考评系统/数据集/汇总"
     # annotation_path = "F:/develop_code/python/yolo/yolov5/code/kaist_ds/lables/test"
 
     label = voc_label_statistics(annotation_path)

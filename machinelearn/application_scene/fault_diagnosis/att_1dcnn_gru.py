@@ -6,7 +6,7 @@
 @Software: PyCharm
 @File    : att_1dcnn_gru.py
 @Time    : 2020/7/17 19:47
-@desc	 :
+@desc	 : paper1 算法框架
 '''
 
 from application_scene.fault_diagnosis import bearingPro

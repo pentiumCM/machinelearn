@@ -145,3 +145,5 @@ docs/model/
 *.png
 *.xls
 *.jpg
+*.txt
+*.bat

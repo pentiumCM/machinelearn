@@ -4,26 +4,21 @@
 @Author  : pentiumCM
 @Email   : 842679178@qq.com
 @Software: PyCharm
-@File    : test.py
-@Time    : 2020/11/1 17:00
-@desc	 : pytorch 测试文件
+@File    : test_result.py
+@Time    : 2021/1/10 0:02
+@desc	 :
 '''
 
-import torch
+import os, sys
 
-a = torch.rand(5, 3)
+print(__file__)
 
-print(a)
+# 获得绝对路径
+print(os.path.abspath(__file__))
 
-zeros = torch.zeros(5, 3, dtype=torch.long)
-print(zeros)
+#
+print(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # 获得的是Test的绝对路径
 
-tensors = torch.tensor([5.5, 3])
-print(tensors)
+print('')
 
-x = tensors.new_ones(5, 3, dtype=torch.double)
 
-# new_* methods take in sizes
-print(x)
-
-print("size：", x.size())

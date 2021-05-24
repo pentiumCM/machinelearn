@@ -26,3 +26,10 @@
         + pca_utils.py：pca降维工具
         + plt_utils.py：matplotlib绘图工具
         + scaler_utils.py：数据标准化/归一化工具
+        
+## 二、环境搭建
+1. tensorflow-gpu
+
+| tensorflow | keras | python |
+|-|-|-|
+| 1.14.0| 2.2.5| 3.6|

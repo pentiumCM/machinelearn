@@ -6,11 +6,10 @@
 @Software: PyCharm
 @File    : main.py
 @Time    : 2020/11/25 16:22
-@desc	 : 
+@desc	 : pytorch语法学习
 '''
 
 import torch
 
-x = torch.rand(5, 3)
-
+x = torch.tensor([5.5, 3])
 print(x)

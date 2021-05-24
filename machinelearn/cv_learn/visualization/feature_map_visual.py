@@ -7,71 +7,200 @@
 @File    : feature_map_visual.py
 @Time    : 2020/12/7 11:12
 @desc	 : feature map可视化
+            参考：https://blog.csdn.net/weixin_36411839/article/details/109097714
 '''
 
+import os
 import torch
-from torch.autograd import Variable
+import torchvision as tv
+import torchvision.transforms as transforms
 import torch.nn as nn
-import pickle
+import torch.optim as optim
+import argparse
+import skimage.data
+import skimage.io
+import skimage.transform
+import numpy as np
+import matplotlib.pyplot as plt
 
-from sys import path
+# 定义是否使用GPU
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-path.append('/residual model path')
-import residual_model
-from residual_model import Residual_Model
+# Load training and testing datasets.
+pic_dir = 'set06_V003_I00983_visible.jpg'
 
-model = Residual_Model()
-model.load_state_dict(torch.load('./model.pkl'))
+# 定义数据预处理方式(将输入的类似numpy中arrary形式的数据转化为pytorch中的张量（tensor）)
+transform = transforms.ToTensor()
 
 
-class myNet(nn.Module):
-    def __init__(self, pretrained_model, layers):
-        super(myNet, self).__init__()
-        self.net1 = nn.Sequential(*list(pretrained_model.children())[:layers[0]])
-        self.net2 = nn.Sequential(*list(pretrained_model.children())[:layers[1]])
-        self.net3 = nn.Sequential(*list(pretrained_model.children())[:layers[2]])
+# 单张图像送入
+# 构建网络
+# 提取中间层
+# 可视化特征图
+
+def get_picture(picture_dir, transform):
+    '''
+    该算法实现了读取图片，并将其类型转化为Tensor
+    '''
+    img = skimage.io.imread(picture_dir)
+    img256 = skimage.transform.resize(img, (256, 256))
+    img256 = np.asarray(img256)
+    img256 = img256.astype(np.float32)
+
+    return transform(img256)
+
+
+def get_picture_rgb(picture_dir):
+    '''
+    该函数实现了显示图片的RGB三通道颜色
+    '''
+    img = skimage.io.imread(picture_dir)
+    img256 = skimage.transform.resize(img, (256, 256))
+    skimage.io.imsave('new4.jpg', img256)
+
+    # 取单一通道值显示
+    # for i in range(3):
+    #     img = img256[:,:,i]
+    #     ax = plt.subplot(1, 3, i + 1)
+    #     ax.set_title('Feature {}'.format(i))
+    #     ax.axis('off')
+    #     plt.imshow(img)
+
+    # r = img256.copy()
+    # r[:,:,0:2]=0
+    # ax = plt.subplot(1, 4, 1)
+    # ax.set_title('B Channel')
+    # # ax.axis('off')
+    # plt.imshow(r)
+
+    # g = img256.copy()
+    # g[:,:,0]=0
+    # g[:,:,2]=0
+    # ax = plt.subplot(1, 4, 2)
+    # ax.set_title('G Channel')
+    # # ax.axis('off')
+    # plt.imshow(g)
+
+    # b = img256.copy()
+    # b[:,:,1:3]=0
+    # ax = plt.subplot(1, 4, 3)
+    # ax.set_title('R Channel')
+    # # ax.axis('off')
+    # plt.imshow(b)
+
+    # img = img256.copy()
+    # ax = plt.subplot(1, 4, 4)
+    # ax.set_title('image')
+    # # ax.axis('off')
+    # plt.imshow(img)
+
+    img = img256.copy()
+    ax = plt.subplot()
+    ax.set_title('new-image')
+    # ax.axis('off')
+    plt.imshow(img)
+
+    plt.show()
+
+
+class LeNet(nn.Module):
+    '''
+    该类继承了torch.nn.Modul类
+    构建LeNet神经网络模型
+    '''
+
+    def __init__(self):
+        super(LeNet, self).__init__()
+
+        # 第一层神经网络，包括卷积层、线性激活函数、池化层
+        self.conv1 = nn.Sequential(
+            nn.Conv2d(3, 32, 5, 1, 2),  # input_size=(3*256*256)，padding=2
+            nn.ReLU(),  # input_size=(32*256*256)
+            nn.MaxPool2d(kernel_size=2, stride=2),  # output_size=(32*128*128)
+        )
+
+        # 第二层神经网络，包括卷积层、线性激活函数、池化层
+        self.conv2 = nn.Sequential(
+            nn.Conv2d(32, 64, 5, 1, 2),  # input_size=(32*128*128)
+            nn.ReLU(),  # input_size=(64*128*128)
+            nn.MaxPool2d(2, 2)  # output_size=(64*64*64)
+        )
+
+        # 全连接层(将神经网络的神经元的多维输出转化为一维)
+        self.fc1 = nn.Sequential(
+            nn.Linear(64 * 64 * 64, 128),  # 进行线性变换
+            nn.ReLU()  # 进行ReLu激活
+        )
+
+        # 输出层(将全连接层的一维输出进行处理)
+        self.fc2 = nn.Sequential(
+            nn.Linear(128, 84),
+            nn.ReLU()
+        )
+
+        # 将输出层的数据进行分类(输出预测值)
+        self.fc3 = nn.Linear(84, 62)
+
+    # 定义前向传播过程，输入为x
+    def forward(self, x):
+        x = self.conv1(x)
+        x = self.conv2(x)
+        # nn.Linear()的输入输出都是维度为一的值，所以要把多维度的tensor展平成一维
+        x = x.view(x.size()[0], -1)
+        x = self.fc1(x)
+        x = self.fc2(x)
+        x = self.fc3(x)
+        return x
+
+
+# 中间特征提取
+class FeatureExtractor(nn.Module):
+    def __init__(self, submodule, extracted_layers):
+        super(FeatureExtractor, self).__init__()
+        self.submodule = submodule
+        self.extracted_layers = extracted_layers
 
     def forward(self, x):
-        out1 = self.net1(x)
-        out2 = self.net(out1)
-        out3 = self.net(out2)
-        return out1, out2, out3
+        outputs = []
+        print('---------', self.submodule._modules.items())
+        for name, module in self.submodule._modules.items():
+            if "fc" in name:
+                x = x.view(x.size(0), -1)
+            print(module)
+            x = module(x)
+            print('name', name)
+            if name in self.extracted_layers:
+                outputs.append(x)
+        return outputs
 
 
-def get_features(pretrained_model, x, layers=[3, 4, 9]):  ## get_features 其实很简单
-    '''
-    1.首先import model 
-    2.将weights load 进model
-    3.熟悉model的每一层的位置，提前知道要输出feature map的网络层是处于网络的那一层
-    4.直接将test_x输入网络，*list(model.chidren())是用来提取网络的每一层的结构的。net1 = nn.Sequential(*list(pretrained_model.children())[:layers[0]]) ,就是第三层前的所有层。
-    
-    '''
-    net1 = nn.Sequential(*list(pretrained_model.children())[:layers[0]])
-    #   print net1  
-    out1 = net1(x)
+def get_feature():  # 特征可视化
+    # 输入数据
+    img = get_picture(pic_dir, transform)  # 输入的图像是【3,256,256】
+    # 插入维度
+    img = img.unsqueeze(0)  # 【1,3,256,256】
+    img = img.to(device)
 
-    net2 = nn.Sequential(*list(pretrained_model.children())[layers[0]:layers[1]])
-    #   print net2  
-    out2 = net2(out1)
+    # 特征输出
+    net = LeNet().to(device)
+    # net.load_state_dict(torch.load('./model/net_050.pth'))
+    exact_list = ['conv1']
+    myexactor = FeatureExtractor(net, exact_list)  # 输出是一个网络
+    x = myexactor(img)
 
-    # net3 = nn.Sequential(*list(pretrained_model.children())[layers[1]:layers[2]])  
-    # out3 = net3(out2)  
+    # 特征输出可视化
+    for i in range(32):  # 可视化了32通道
+        ax = plt.subplot(6, 6, i + 1)
+        ax.set_title('Feature {}'.format(i))
+        ax.axis('off')
+        ax.set_title('new—conv1-image')
 
-    return out1, out2
+        plt.imshow(x[0].data.cpu().numpy()[0, i, :, :], cmap='jet')
+
+    plt.show()  # 图像每次都不一样，是因为模型每次都需要前向传播一次，不是加载的与训练模型
 
 
-with open('test.pickle', 'rb') as f:
-    data = pickle.load(f)
-x = data['test_mains'][0]
-x = Variable(torch.from_numpy(x)).view(1, 1, 128, 1)  ## test_x必须为Varibable
-# x = Variable(torch.randn(1,1,128,1))
-if torch.cuda.is_available():
-    x = x.cuda()  # 如果模型的训练是用cuda加速的话，输入的变量也必须是cuda加速的，两个必须是对应的，网络的参数weight都是用cuda加速的，不然会报错
-    model = model.cuda()
-output1, output2 = get_features(model, x)  ## model是训练好的model,前面已经import 进来了Residual model
-print('output1.shape:', output1.shape)
-print('output2.shape:', output2.shape)
-# print('output3.shape:',output3.shape)
-output_1 = torch.squeeze(output2, dim=0)
-output_1_arr = output_1.data.cpu().numpy()  # 得到的cuda加速的输出不能直接转变成numpy格式的，当时根据报错的信息首先将变量转换为cpu的，然后转换为numpy的格式
-output_1_arr = output_1_arr.reshape([output_1_arr.shape[0], output_1_arr.shape[1]])
+# 训练
+if __name__ == "__main__":
+    # get_picture_rgb(pic_dir)
+    get_feature()
